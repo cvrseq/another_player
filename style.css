@@ -21,3 +21,7 @@ body {
   filter: brightness(1.5);
   box-shadow: 0 0 10px rgba(0, 170, 255, 0), 0 0 20px rgba(0, 170, 255, 0.5);
 }
+
+.audio-container {
+  
+}

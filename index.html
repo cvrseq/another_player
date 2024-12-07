@@ -11,8 +11,9 @@
     <div class="control">
       <i class="fi-rr-play" id="playPause"></i>
     </div>
-    <div id="audio-spectrum"></div>
-
+    <div class="audio-container">
+      <div id="audio-spectrum"></div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.3.7/wavesurfer.min.js"></script>
     <script>
       var buttons = {
@@ -23,8 +24,8 @@
         container: '#audio-spectrum',
         progressColor: '#f9f9f9',
         waveColor: '#383838',
+        barRadius: 20,
         barWidth: 4,
-        barRadius: 100,
       });
 
       buttons.playPause.addEventListener(
