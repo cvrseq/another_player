@@ -8,63 +8,41 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <div class="control">
+      <i class="fi-rr-play" id="playPause"></i>
+    </div>
     <div id="audio-spectrum"></div>
-
-    <input type="button" id="btn-play" value="Play" disabled="disabled" />
-    <input type="button" id="btn-pause" value="Pause" disabled="disabled" />
-    <input type="button" id="btn-stop" value="Stop" disabled="disabled" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.3.7/wavesurfer.min.js"></script>
     <script>
       var buttons = {
-        play: document.getElementById('btn-play'),
-        pause: document.getElementById('btn-pause'),
-        stop: document.getElementById('btn-stop'),
+        playPause: document.getElementById('playPause'),
       };
 
       var Spectrum = WaveSurfer.create({
         container: '#audio-spectrum',
-        progressColor: '#03a9f4',
+        progressColor: '#f9f9f9',
+        waveColor: '#383838',
+        barWidth: 4,
+        barRadius: 100,
       });
 
-      buttons.play.addEventListener(
+      buttons.playPause.addEventListener(
         'click',
         function () {
-          Spectrum.play();
-
-          buttons.stop.disabled = false;
-          buttons.pause.disabled = false;
-          buttons.play.disabled = true;
-        },
-        false
-      );
-
-      buttons.pause.addEventListener(
-        'click',
-        function () {
-          Spectrum.pause();
-
-          buttons.stop.disabled = false;
-          buttons.pause.disabled = true;
-          buttons.play.disabled = false;
-        },
-        false
-      );
-
-      buttons.stop.addEventListener(
-        'click',
-        function () {
-          Spectrum.stop();
-
-          buttons.stop.disabled = true;
-          buttons.pause.disabled = false;
-          buttons.play.disabled = false;
+          if (Spectrum.isPlaying()) {
+            Spectrum.pause();
+            buttons.playPause.value = 'Play';
+          } else {
+            Spectrum.play();
+            buttons.playPause.value = 'Pause';
+          }
         },
         false
       );
 
       Spectrum.on('ready', function () {
-        buttons.play.disabled = false;
+        buttons.playPause.disabled = false;
       });
 
       window.addEventListener(
@@ -76,15 +54,11 @@
           Spectrum.empty();
           Spectrum.drawBuffer();
           Spectrum.seekTo(currentProgress);
-
-          buttons.stop.disabled = false;
-          buttons.pause.disabled = true;
-          buttons.play.disabled = false;
         },
         false
       );
 
-      Spectrum.load('Chris.mp3');
+      Spectrum.load('test.mp3');
     </script>
   </body>
 </html>

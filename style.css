@@ -1,1 +1,23 @@
 @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+body {
+  background-color: rgb(38, 38, 38);
+}
+.control i {
+  width: 3.5rem;
+  height: 3rem;
+  display: grid;
+  place-content: center;
+  background-color: #000000;
+  color: white;
+  border-radius: 20%;
+  cursor: pointer;
+  box-shadow: 0 0 0rem #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.control i:hover {
+  transform: scale(1.1);
+  filter: brightness(1.5);
+  box-shadow: 0 0 10px rgba(0, 170, 255, 0), 0 0 20px rgba(0, 170, 255, 0.5);
+}
