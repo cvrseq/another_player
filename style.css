@@ -2,6 +2,15 @@
 
 body {
   background-color: rgb(38, 38, 38);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0;
+  width: 100%;
+  padding: 15px;
+}
+
+html {
+  overflow-x: hidden;
 }
 .control svg {
   width: 2rem;
@@ -25,10 +34,47 @@ body {
 .control h5 {
   color: #ffffff;
   left: 50px;
-  bottom: 60px;
+  bottom: 48px;
   position: relative;
-  font-size: 18px;
+  font-size: 14px;
   font-family: 'Tilda';
+}
+
+@media (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body,
+  html {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .container-spectrum {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .container-control {
+    max-width: 90%;
+    box-sizing: border-box;
+  }
+
+  #audio-spectrum {
+    width: 90%;
+  }
+
+  .control svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .control h5 {
+    font-size: 10px;
+    left: 40px;
+    bottom: 35px;
+  }
 }
 
 @font-face {
