@@ -21,3 +21,19 @@ body {
 .container-control {
   height: 50px;
 }
+
+.control h5 {
+  color: #ffffff;
+  left: 50px;
+  bottom: 60px;
+  position: relative;
+  font-size: 18px;
+  font-family: 'Tilda';
+}
+
+@font-face {
+  font-family: 'Tilda';
+  src: url('./TildaSans.07TTF/TildaSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
