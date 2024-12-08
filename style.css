@@ -5,12 +5,9 @@ body {
 }
 .control svg {
   width: 2rem;
-  height: 1.5rem;
-  display: grid;
-  place-content: center;
-  background-color: #000000;
+  height: 2rem;
+  display: block;
   color: white;
-  border-radius: 20%;
   cursor: pointer;
   box-shadow: 0 0 0rem #ffffff;
   transition: transform 0.3s ease;
@@ -19,5 +16,8 @@ body {
 .control svg:hover {
   transform: scale(1.1);
   filter: brightness(1.5);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0), 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.container-control {
+  height: 50px;
 }
