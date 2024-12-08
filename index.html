@@ -23,15 +23,31 @@
         />
       </svg>
     </div>
-
-    <div id="audio-spectrum"></div>
-
+    <div id="container-spectrum">
+      <div id="audio-spectrum"></div>
+    </div>
     <script src="https://unpkg.com/wavesurfer.js"></script>
 
     <script>
       var buttons = {
         playPause: document.getElementById('playPause'),
       };
+
+      const waveBlock = document.getElementById('container-spectrum');
+
+      if (window.innerHeight > window.innerWidth) {
+        waveBlock.style.marginBottom = '40vw';
+      } else {
+        waveBlock.style.marginBottom = '3vw';
+      }
+
+      window.addEventListener('resize', function () {
+        if (window.innerHeight > window.innerWidth) {
+          waveBlock.style.marginBottom = '40vw';
+        } else {
+          waveBlock.style.marginBottom = '3vw';
+        }
+      });
 
       var Spectrum = WaveSurfer.create({
         container: '#audio-spectrum',

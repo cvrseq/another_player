@@ -5,7 +5,7 @@ body {
 }
 .control svg {
   width: 2rem;
-  height: 2rem;
+  height: 1.5rem;
   display: grid;
   place-content: center;
   background-color: #000000;
