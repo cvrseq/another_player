@@ -1,21 +1,12 @@
 @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 body {
   background-color: rgb(38, 38, 38);
   overflow-x: hidden;
   overflow-y: hidden;
   margin: 0;
   width: 100%;
-  padding: 15px;
+  padding: 15rem;
 }
 
 html {
@@ -25,7 +16,20 @@ html {
 #playPause,
 #playPause2,
 #playPause3,
-#playPause4 {
+#playPause4,
+#playPause5,
+#playPause6,
+#playPause7,
+#playPause8,
+#playPause9,
+#playPause10,
+#playPause11,
+#playPause12,
+#playPause13,
+#playPause14,
+#playPause15,
+#playPause16,
+#playPause17 {
   width: 2rem;
   height: 2rem;
   display: block;
@@ -33,13 +37,25 @@ html {
   cursor: pointer;
   box-shadow: 0 0 0rem #ffffff;
   transition: transform 0.3s ease;
-  animation: fadein 5s;
 }
 
 #playPause:hover,
 #playPause2:hover,
 #playPause3:hover,
-#playPause4:hover {
+#playPause4:hover,
+#playPause5:hover,
+#playPause6:hover,
+#playPause7:hover,
+#playPause8:hover,
+#playPause9:hover,
+#playPause10:hover,
+#playPause11:hover,
+#playPause12:hover,
+#playPause13:hover,
+#playPause14:hover,
+#playPause15:hover,
+#playPause16:hover,
+#playPause17:hover {
   transform: scale(1.1);
   filter: brightness(1.5);
 }
@@ -59,15 +75,13 @@ html {
 }
 
 .wave {
-  width: 100%;
+  width: 70%;
 }
 
-.control .track1,
-.control .track2,
-.control .track3,
-.control .track4 {
+.track1 {
   color: #ffffff;
-  bottom: 30px;
+  bottom: 25px;
+  left: 50px;
   position: relative;
   font-size: 14px;
   font-family: 'Tilda';
@@ -82,7 +96,7 @@ html {
   html {
     overflow-x: hidden;
     width: 100%;
-    padding: 1rem;
+    padding: 2rem;
   }
 
   .container-spectrum {
@@ -90,22 +104,29 @@ html {
     box-sizing: border-box;
   }
 
-  .second-container-spectrum {
-    max-width: 100%;
-    box-sizing: border-box;
-  }
 
-  #audio-spectrum {
+  #audio-spectrum,
+  #second-audio-spectrum,
+  #third-audio-spectrum,
+  #four-audio-spectrum,
+  #fifth-audio-spectrum,
+  #sixth-audio-spectrum,
+  #seventh-audio-spectrum,
+  #eighth-audio-spectrum,
+  #ninth-audio-spectrum,
+  #tenth-audio-spectrum, 
+  #eleventh-audio-spectrum,
+  #twlth-audio-spectrum,
+  #thrteenth-audio-spectrum,
+  #fourth-audio-spectrum,
+  #fifteenth-audio-spectrum,
+  #sixteenth-audio-spectrum,
+  #svnteenth-audio-spectrum{
     width: 90%;
     max-width: 700px;
     margin: 0 auto;
   }
 
-  #second-audio-spectrum {
-    width: 90%;
-    max-width: 700px;
-    margin: 0 auto;
-  }
 
   .control svg {
     width: 1.5rem;
