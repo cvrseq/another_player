@@ -8,70 +8,260 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="container-control">
-      <div class="control">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          class="bi bi-play"
-          viewBox="0 0 16 16"
-          id="playPause"
-        >
-          <path
-            d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"
-          />
-        </svg>
-        <h5>Из шоу Late Night Show c Ильёй Соболевым</h5>
+    <div class="for-tracks">
+      <div class="container-spectrum">
+        <!--first wave-->
+        <div class="control">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-play"
+            viewBox="0 0 16 16"
+            id="playPause"
+          >
+            <path
+              d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"
+            />
+          </svg>
+
+          <div class="track1">Из шоу Late Night Show c Ильёй Соболевым</div>
+        </div>
+        <div id="audio-spectrum" class="wave"></div>
+      </div>
+      <div class="container-spectrum">
+        <!--second wave-->
+        <div class="control">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-play"
+            viewBox="0 0 16 16"
+            id="playPause2"
+          >
+            <path
+              d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"
+            />
+          </svg>
+          <div class="track1">track 2</div>
+        </div>
+        <div id="second-audio-spectrum" class="wave"></div>
+      </div>
+
+      <div class="container-spectrum">
+        <!--third wave-->
+        <div class="control">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-play"
+            viewBox="0 0 16 16"
+            id="playPause3"
+          >
+            <path
+              d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"
+            />
+          </svg>
+          <div class="track1">track 3</div>
+        </div>
+        <div id="third-audio-spectrum" class="wave"></div>
+      </div>
+
+      <div class="container-spectrum">
+        <!--third wave-->
+        <div class="control">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-play"
+            viewBox="0 0 16 16"
+            id="playPause4"
+          >
+            <path
+              d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"
+            />
+          </svg>
+          <div class="track1">track 4</div>
+        </div>
+        <div id="four-audio-spectrum" class="wave"></div>
       </div>
     </div>
-    <div id="container-spectrum">
-      <div id="audio-spectrum"></div>
-    </div>
-
     <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
 
     <script>
       var buttons = {
         playPause: document.getElementById('playPause'),
+        secondPlayPause: document.getElementById('playPause2'),
+        thirdPlayPause: document.getElementById('playPause3'),
+        fourPlayPause: document.getElementById('playPause4'),
       };
 
       var Spectrum = WaveSurfer.create({
+        //first wave
         container: '#audio-spectrum',
         progressColor: '#f9f9f9',
         waveColor: '#383838',
-        barWidth: 1,
-        height: 40,
+        barWidth: 2,
+        height: 50,
         barRadius: 6,
+        cursorWidth: 4,
+        cursorColor: '#eb4034',
+        responsive: true,
+        dragToSeek: true,
+        normalize: true,
+      });
+
+      var secondSpectrum = WaveSurfer.create({
+        //second wave
+        container: '#second-audio-spectrum',
+        progressColor: '#f9f9f9',
+        waveColor: '#383838',
+        barWidth: 2,
+        height: 50,
+        barRadius: 6,
+        cursorWidth: 4,
+        cursorColor: '#eb4034',
+        responsive: true,
+        dragToSeek: true,
+        normalize: true,
+      });
+
+      var thirdSpectrum = WaveSurfer.create({
+        container: '#third-audio-spectrum',
+        progressColor: '#f9f9f9',
+        waveColor: '#383838',
+        barWidth: 2,
+        height: 50,
+        barRadius: 6,
+        cursorWidth: 4,
+        cursorColor: '#eb4034',
+        responsive: true,
+        dragToSeek: true,
+        normalize: true,
+      });
+
+      var fourSpectrum = WaveSurfer.create({
+        container: '#four-audio-spectrum',
+        progressColor: '#f9f9f9',
+        waveColor: '#383838',
+        barWidth: 2,
+        height: 50,
+        barRadius: 6,
+        cursorWidth: 4,
+        cursorColor: '#eb4034',
         responsive: true,
         dragToSeek: true,
         normalize: true,
       });
 
       buttons.playPause.addEventListener(
+        //first wave
         'click',
         function () {
           if (Spectrum.isPlaying()) {
             Spectrum.pause();
             buttons.playPause.value = 'Play';
-            playPause.innerHTML =
+            buttons.playPause.innerHTML =
               '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
           } else {
             Spectrum.play();
             buttons.playPause.value = 'Pause';
-            playPause.innerHTML =
+            buttons.playPause.innerHTML =
               '  <path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
           }
         },
         false
       );
 
+      buttons.secondPlayPause.addEventListener(
+        //second wave
+        'click',
+        function () {
+          if (secondSpectrum.isPlaying()) {
+            secondSpectrum.pause();
+            buttons.secondPlayPause.value = 'Play';
+            buttons.secondPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          } else {
+            secondSpectrum.play();
+            buttons.secondPlayPause.value = 'Pause';
+            buttons.secondPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          }
+        },
+        false
+      );
+
+      buttons.thirdPlayPause.addEventListener(
+        //third wave
+        'click',
+        function () {
+          if (thirdSpectrum.isPlaying()) {
+            thirdSpectrum.pause();
+            buttons.thirdPlayPause.value = 'Play';
+            buttons.thirdPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          } else {
+            thirdSpectrum.play();
+            buttons.thirdPlayPause.value = 'Pause';
+            buttons.thirdPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          }
+        },
+        false
+      );
+
+      buttons.fourPlayPause.addEventListener(
+        //four wave
+        'click',
+        function () {
+          if (fourSpectrum.isPlaying()) {
+            fourSpectrum.pause();
+            buttons.fourPlayPause.value = 'Play';
+            buttons.fourPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          } else {
+            fourSpectrum.play();
+            buttons.fourPlayPause.value = 'Pause';
+            buttons.fourPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          }
+        },
+        false
+      );
+
       Spectrum.on('ready', function () {
+        //first wave
         buttons.playPause.disabled = false;
       });
 
+      secondSpectrum.on('ready', function () {
+        //second wave
+        buttons.secondPlayPause.disabled = false;
+      });
+
+      thirdSpectrum.on('ready', function () {
+        //second wave
+        buttons.thirdPlayPause.disabled = false;
+      });
+
+      fourSpectrum.on('ready', function () {
+        //second wave
+        buttons.fourPlayPause.disabled = false;
+      });
+
       window.addEventListener(
+        //second wave
         'resize',
         function () {
           var currentProgress =
@@ -82,11 +272,46 @@
 
           Spectrum.drawBuffer();
           Spectrum.seekTo(currentProgress);
+          //<-------------------------------------------------------------->
+          var secondcurrentProgress =
+            secondSpectrum.getCurrentTime() / secondSpectrum.getDuration();
+
+          secondSpectrum.drawer.containerWidth =
+            secondSpectrum.drawer.container.clientWidth;
+
+          secondSpectrum.drawBuffer();
+          secondSpectrum.seekTo(secondcurrentProgress);
+          //<--------------------------------------------------------------->
+
+          var thirdcurrentProgress =
+            thirdSpectrum.getCurrentTime() / thirdSpectrum.getDuration();
+
+          thirdSpectrum.drawer.containerWidth =
+            thirdSpectrum.drawer.container.clientWidth;
+
+          thirdSpectrum.drawBuffer();
+          thirdSpectrum.seekTo(thirdSpectrum);
+          //<--------------------------------------------------------------->
+
+          var fourcurrentProgress =
+            fourSpectrum.getCurrentTime() / fourSpectrum.getDuration();
+
+          fourSpectrum.drawer.containerWidth =
+            fourSpectrum.drawer.container.clientWidth;
+
+          fourSpectrum.drawBuffer();
+          fourSpectrum.seekTo(fourSpectrum);
         },
         false
       );
 
-      Spectrum.load('test.mp3');
+      Spectrum.load('./tracks/test.mp3'); //first wave
+
+      secondSpectrum.load('./tracks/thithif.mp3'); //second wave
+
+      thirdSpectrum.load('./tracks/SNIP1.mp3'); //third wave
+
+      fourSpectrum.load('./tracks/play.mp3'); //four wave
     </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

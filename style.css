@@ -1,5 +1,14 @@
 @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 body {
   background-color: rgb(38, 38, 38);
   overflow-x: hidden;
@@ -12,7 +21,11 @@ body {
 html {
   overflow-x: hidden;
 }
-.control svg {
+
+#playPause,
+#playPause2,
+#playPause3,
+#playPause4 {
   width: 2rem;
   height: 2rem;
   display: block;
@@ -20,21 +33,41 @@ html {
   cursor: pointer;
   box-shadow: 0 0 0rem #ffffff;
   transition: transform 0.3s ease;
+  animation: fadein 5s;
 }
 
-.control svg:hover {
+#playPause:hover,
+#playPause2:hover,
+#playPause3:hover,
+#playPause4:hover {
   transform: scale(1.1);
   filter: brightness(1.5);
 }
 
-.container-control {
-  height: 50px;
+.for-tracks {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.control h5 {
+.container-spectrum {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.wave {
+  width: 100%;
+}
+
+.control .track1,
+.control .track2,
+.control .track3,
+.control .track4 {
   color: #ffffff;
-  left: 50px;
-  bottom: 48px;
+  bottom: 30px;
   position: relative;
   font-size: 14px;
   font-family: 'Tilda';
@@ -49,6 +82,7 @@ html {
   html {
     overflow-x: hidden;
     width: 100%;
+    padding: 1rem;
   }
 
   .container-spectrum {
@@ -56,13 +90,21 @@ html {
     box-sizing: border-box;
   }
 
-  .container-control {
-    max-width: 90%;
+  .second-container-spectrum {
+    max-width: 100%;
     box-sizing: border-box;
   }
 
   #audio-spectrum {
     width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  #second-audio-spectrum {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
   }
 
   .control svg {
