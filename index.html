@@ -198,26 +198,26 @@
         <div id="ninth-audio-spectrum" class="wave"></div>
       </div>
 
-      <div class="container-spectrum">
-        <!--tenth wave-->
-        <div class="control">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-play"
-            viewBox="0 0 16 16"
-            id="playPause10"
-          >
-            <path
-              d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"
-            />
-          </svg>
-          <div class="track1">track 10</div>
-        </div>
-        <div id="tenth-audio-spectrum" class="wave"></div>
-      </div>
+      <!--<div class="container-spectrum">-->
+      <!--tenth wave-->
+      <!--<div class="control">-->
+      <!--<svg
+           <!-- xmlns="http://www.w3.org/2000/svg"
+           <!-- width="16"
+           <!-- height="16"
+           <!-- fill="currentColor"
+           <!-- class="bi bi-play"
+           <!-- viewBox="0 0 16 16"
+           <!-- id="playPause10"
+          >-->
+      <!-- <path
+            <!--  d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"
+            <!--/>-->
+      <!--</svg>-->
+      <!--<div class="track1">track 10</div>-->
+      <!--</div>-->
+      <!--<div id="tenth-audio-spectrum" class="wave"></div>-->
+      <!--</div>-->
 
       <div class="container-spectrum">
         <!--eleventh wave-->
@@ -382,7 +382,7 @@
         seventhPlayPause: document.getElementById('playPause7'),
         eighthPlayPause: document.getElementById('playPause8'),
         ninthPlayPause: document.getElementById('playPause9'),
-        tenthPlayPause: document.getElementById('playPause10'),
+        //tenthPlayPause: document.getElementById('playPause10'),
         eleventhPlayPause: document.getElementById('playPause11'),
         twlthPlayPause: document.getElementById('playPause12'),
         thrteenthPlayPause: document.getElementById('playPause13'),
@@ -401,7 +401,7 @@
         height: 50,
         barRadius: 6,
         cursorWidth: 4,
-        cursorColor: '#eb4034',
+        cursorColor: '#f9f9f9',
         responsive: true,
         dragToSeek: true,
         normalize: true,
@@ -410,13 +410,13 @@
       var secondSpectrum = WaveSurfer.create({
         //second wave
         container: '#second-audio-spectrum',
-        progressColor: '#f9f9f9',
+        progressColor: '#ff0000',
         waveColor: '#383838',
         barWidth: 2,
         height: 50,
         barRadius: 6,
         cursorWidth: 4,
-        cursorColor: '#eb4034',
+        cursorColor: '#f9f9f9',
         responsive: true,
         dragToSeek: true,
         normalize: true,
@@ -424,13 +424,13 @@
 
       var thirdSpectrum = WaveSurfer.create({
         container: '#third-audio-spectrum',
-        progressColor: '#f9f9f9',
+        progressColor: '#fff200',
         waveColor: '#383838',
         barWidth: 2,
         height: 50,
         barRadius: 6,
         cursorWidth: 4,
-        cursorColor: '#eb4034',
+        cursorColor: '#f9f9f9',
         responsive: true,
         dragToSeek: true,
         normalize: true,
@@ -438,13 +438,13 @@
 
       var fourSpectrum = WaveSurfer.create({
         container: '#four-audio-spectrum',
-        progressColor: '#f9f9f9',
+        progressColor: '#88ff00',
         waveColor: '#383838',
         barWidth: 2,
         height: 50,
         barRadius: 6,
         cursorWidth: 4,
-        cursorColor: '#eb4034',
+        cursorColor: '#f9f9f9',
         responsive: true,
         dragToSeek: true,
         normalize: true,
@@ -452,13 +452,13 @@
 
       var fifthSpectrum = WaveSurfer.create({
         container: '#fifth-audio-spectrum',
-        progressColor: '#f9f9f9',
+        progressColor: '#00ff1e',
         waveColor: '#383838',
         barWidth: 2,
         height: 50,
         barRadius: 6,
         cursorWidth: 4,
-        cursorColor: '#eb4034',
+        cursorColor: '#f9f9f9',
         responsive: true,
         dragToSeek: true,
         normalize: true,
@@ -466,13 +466,13 @@
 
       var sixthSpectrum = WaveSurfer.create({
         container: '#sixth-audio-spectrum',
-        progressColor: '#f9f9f9',
+        progressColor: '#00fbff',
         waveColor: '#383838',
         barWidth: 2,
         height: 50,
         barRadius: 6,
         cursorWidth: 4,
-        cursorColor: '#eb4034',
+        cursorColor: '#f9f9f9',
         responsive: true,
         dragToSeek: true,
         normalize: true,
@@ -480,13 +480,13 @@
 
       var seventhSpectrum = WaveSurfer.create({
         container: '#seventh-audio-spectrum',
-        progressColor: '#f9f9f9',
+        progressColor: '#0077ff',
         waveColor: '#383838',
         barWidth: 2,
         height: 50,
         barRadius: 6,
         cursorWidth: 4,
-        cursorColor: '#eb4034',
+        cursorColor: '#f9f9f9',
         responsive: true,
         dragToSeek: true,
         normalize: true,
@@ -494,13 +494,13 @@
 
       var eighthSpectrum = WaveSurfer.create({
         container: '#eighth-audio-spectrum',
-        progressColor: '#f9f9f9',
+        progressColor: '#6c05fc',
         waveColor: '#383838',
         barWidth: 2,
         height: 50,
         barRadius: 6,
         cursorWidth: 4,
-        cursorColor: '#eb4034',
+        cursorColor: '#f9f9f9',
         responsive: true,
         dragToSeek: true,
         normalize: true,
@@ -508,41 +508,41 @@
 
       var ninthSpectrum = WaveSurfer.create({
         container: '#ninth-audio-spectrum',
-        progressColor: '#f9f9f9',
+        progressColor: '#ec05fc',
         waveColor: '#383838',
         barWidth: 2,
         height: 50,
         barRadius: 6,
         cursorWidth: 4,
-        cursorColor: '#eb4034',
+        cursorColor: '#f9f9f9',
         responsive: true,
         dragToSeek: true,
         normalize: true,
       });
 
-      var tenthSpectrum = WaveSurfer.create({
+      /*var tenthSpectrum = WaveSurfer.create({
         container: '#tenth-audio-spectrum',
-        progressColor: '#f9f9f9',
+        progressColor: '#ff8c00',
         waveColor: '#383838',
         barWidth: 2,
         height: 50,
         barRadius: 6,
         cursorWidth: 4,
-        cursorColor: '#eb4034',
+        cursorColor: '#f9f9f9',
         responsive: true,
         dragToSeek: true,
         normalize: true,
-      });
+      });*/
 
       var eleventhSpectrum = WaveSurfer.create({
         container: '#eleventh-audio-spectrum',
-        progressColor: '#f9f9f9',
+        progressColor: '#ff0000',
         waveColor: '#383838',
         barWidth: 2,
         height: 50,
         barRadius: 6,
         cursorWidth: 4,
-        cursorColor: '#eb4034',
+        cursorColor: '#f9f9f9',
         responsive: true,
         dragToSeek: true,
         normalize: true,
@@ -550,13 +550,13 @@
 
       var twlthSpectrum = WaveSurfer.create({
         container: '#twlth-audio-spectrum',
-        progressColor: '#f9f9f9',
+        progressColor: '#6c05fc',
         waveColor: '#383838',
         barWidth: 2,
         height: 50,
         barRadius: 6,
         cursorWidth: 4,
-        cursorColor: '#eb4034',
+        cursorColor: '#f9f9f9',
         responsive: true,
         dragToSeek: true,
         normalize: true,
@@ -564,13 +564,13 @@
 
       var thrteenthSpectrum = WaveSurfer.create({
         container: '#thrteenth-audio-spectrum',
-        progressColor: '#f9f9f9',
+        progressColor: '#0077ff',
         waveColor: '#383838',
         barWidth: 2,
         height: 50,
         barRadius: 6,
         cursorWidth: 4,
-        cursorColor: '#eb4034',
+        cursorColor: '#f9f9f9',
         responsive: true,
         dragToSeek: true,
         normalize: true,
@@ -578,13 +578,13 @@
 
       var fourteenthSpectrum = WaveSurfer.create({
         container: '#fourteenth-audio-spectrum',
-        progressColor: '#f9f9f9',
+        progressColor: '#00fbff',
         waveColor: '#383838',
         barWidth: 2,
         height: 50,
         barRadius: 6,
         cursorWidth: 4,
-        cursorColor: '#eb4034',
+        cursorColor: '#f9f9f9',
         responsive: true,
         dragToSeek: true,
         normalize: true,
@@ -592,13 +592,13 @@
 
       var fifteenthSpectrum = WaveSurfer.create({
         container: '#fifteenth-audio-spectrum',
-        progressColor: '#f9f9f9',
+        progressColor: '#88ff00',
         waveColor: '#383838',
         barWidth: 2,
         height: 50,
         barRadius: 6,
         cursorWidth: 4,
-        cursorColor: '#eb4034',
+        cursorColor: '#f9f9f9',
         responsive: true,
         dragToSeek: true,
         normalize: true,
@@ -612,7 +612,7 @@
         height: 50,
         barRadius: 6,
         cursorWidth: 4,
-        cursorColor: '#eb4034',
+        cursorColor: '#f9f9f9',
         responsive: true,
         dragToSeek: true,
         normalize: true,
@@ -620,22 +620,376 @@
 
       var svnteenthSpectrum = WaveSurfer.create({
         container: '#svnteenth-audio-spectrum',
-        progressColor: '#f9f9f9',
+        progressColor: '#ff0000',
         waveColor: '#383838',
         barWidth: 2,
         height: 50,
         barRadius: 6,
         cursorWidth: 4,
-        cursorColor: '#eb4034',
+        cursorColor: '#f9f9f9',
         responsive: true,
         dragToSeek: true,
         normalize: true,
       });
 
+      document
+        .querySelector('#audio-spectrum')
+        .addEventListener('click', () => {
+          if (Spectrum.isPlaying()) {
+            Spectrum.play();
+            buttons.playPause.innerHTML = 'Pause';
+            buttons.playPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          } else {
+            Spectrum.play();
+            buttons.playPause.innerHTML = 'Pause';
+            buttons.playPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          }
+        });
+
+      document
+        .querySelector('#second-audio-spectrum')
+        .addEventListener('click', () => {
+          if (secondSpectrum.isPlaying()) {
+            secondSpectrum.play();
+            buttons.secondPlayPause.innerHTML = 'Pause';
+            buttons.secondPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          } else {
+            secondSpectrum.play();
+            buttons.secondPlayPause.innerHTML = 'Pause';
+            buttons.secondPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          }
+        });
+
+      document
+        .querySelector('#third-audio-spectrum')
+        .addEventListener('click', () => {
+          if (thirdSpectrum.isPlaying()) {
+            thirdSpectrum.play();
+            buttons.thirdPlayPause.innerHTML = 'Pause';
+            buttons.thirdPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          } else {
+            thirdSpectrum.play();
+            buttons.thirdPlayPause.innerHTML = 'Pause';
+            buttons.thirdPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          }
+        });
+
+      document
+        .querySelector('#four-audio-spectrum')
+        .addEventListener('click', () => {
+          if (fourSpectrum.isPlaying()) {
+            fourSpectrum.play();
+            buttons.fourPlayPause.innerHTML = 'Pause';
+            buttons.fourPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          } else {
+            fourSpectrum.play();
+            buttons.fourPlayPause.innerHTML = 'Pause';
+            buttons.fourPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          }
+        });
+
+      document
+        .querySelector('#fifth-audio-spectrum')
+        .addEventListener('click', () => {
+          if (fifthSpectrum.isPlaying()) {
+            fifthSpectrum.play();
+            buttons.fifthPlayPause.innerHTML = 'Pause';
+            buttons.fifthPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          } else {
+            fifthSpectrum.play();
+            buttons.fifthPlayPause.innerHTML = 'Pause';
+            buttons.fifthPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          }
+        });
+
+      document
+        .querySelector('#sixth-audio-spectrum')
+        .addEventListener('click', () => {
+          if (sixthSpectrum.isPlaying()) {
+            sixthSpectrum.play();
+            buttons.sixthPlayPause.innerHTML = 'Pause';
+            buttons.sixthPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          } else {
+            sixthSpectrum.play();
+            buttons.sixthPlayPause.innerHTML = 'Pause';
+            buttons.sixthPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          }
+        });
+
+      document
+        .querySelector('#seventh-audio-spectrum')
+        .addEventListener('click', () => {
+          if (seventhSpectrum.isPlaying()) {
+            seventhSpectrum.play();
+            buttons.seventhPlayPause.innerHTML = 'Pause';
+            buttons.seventhPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          } else {
+            seventhSpectrum.play();
+            buttons.seventhPlayPause.innerHTML = 'Pause';
+            buttons.seventhPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          }
+        });
+
+      document
+        .querySelector('#eighth-audio-spectrum')
+        .addEventListener('click', () => {
+          if (eighthSpectrum.isPlaying()) {
+            eighthSpectrum.play();
+            buttons.eighthPlayPause.innerHTML = 'Pause';
+            buttons.eighthPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          } else {
+            eighthSpectrum.play();
+            buttons.eighthPlayPause.innerHTML = 'Pause';
+            buttons.eighthPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          }
+        });
+
+      document
+        .querySelector('#ninth-audio-spectrum')
+        .addEventListener('click', () => {
+          if (ninthSpectrum.isPlaying()) {
+            ninthSpectrum.play();
+            buttons.ninthPlayPause.innerHTML = 'Pause';
+            buttons.ninthPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          } else {
+            ninthSpectrum.play();
+            buttons.ninthPlayPause.innerHTML = 'Pause';
+            buttons.ninthPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          }
+        });
+
+      document
+        .querySelector('#eleventh-audio-spectrum')
+        .addEventListener('click', () => {
+          if (eleventhSpectrum.isPlaying()) {
+            eleventhSpectrum.play();
+            buttons.eleventhPlayPause.innerHTML = 'Pause';
+            buttons.eleventhPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          } else {
+            eleventhSpectrum.play();
+            buttons.eleventhPlayPause.innerHTML = 'Pause';
+            buttons.eleventhPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          }
+        });
+
+      document
+        .querySelector('#twlth-audio-spectrum')
+        .addEventListener('click', () => {
+          if (twlthSpectrum.isPlaying()) {
+            twlthSpectrum.play();
+            buttons.twlthPlayPause.innerHTML = 'Pause';
+            buttons.twlthPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          } else {
+            twlthSpectrum.play();
+            buttons.twlthPlayPause.innerHTML = 'Pause';
+            buttons.twlthPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          }
+        });
+
+      document
+        .querySelector('#thrteenth-audio-spectrum')
+        .addEventListener('click', () => {
+          if (thrteenthSpectrum.isPlaying()) {
+            thrteenthSpectrum.play();
+            buttons.thrteenthPlayPause.innerHTML = 'Pause';
+            buttons.thrteenthPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          } else {
+            thrteenthSpectrum.play();
+            buttons.thrteenthPlayPause.innerHTML = 'Pause';
+            buttons.thrteenthPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          }
+        });
+
+      document
+        .querySelector('#fourteenth-audio-spectrum')
+        .addEventListener('click', () => {
+          if (fourteenthSpectrum.isPlaying()) {
+            fourteenthSpectrum.play();
+            buttons.fourteenthPlayPause.innerHTML = 'Pause';
+            buttons.fourteenthPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          } else {
+            fourteenthSpectrum.play();
+            buttons.fourteenthPlayPause.innerHTML = 'Pause';
+            buttons.fourteenthPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          }
+        });
+
+      document
+        .querySelector('#fifteenth-audio-spectrum')
+        .addEventListener('click', () => {
+          if (fifteenthSpectrum.isPlaying()) {
+            fifteenthSpectrum.play();
+            buttons.fifteenthPlayPause.innerHTML = 'Pause';
+            buttons.fifteenthPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          } else {
+            fifteenthSpectrum.play();
+            buttons.fifteenthPlayPause.innerHTML = 'Pause';
+            buttons.fifteenthPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          }
+        });
+
+      document
+        .querySelector('#sixteenth-audio-spectrum')
+        .addEventListener('click', () => {
+          if (sixteenthSpectrum.isPlaying()) {
+            sixteenthSpectrum.play();
+            buttons.sixteenthPlayPause.innerHTML = 'Pause';
+            buttons.sixteenthPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          } else {
+            sixteenthSpectrum.play();
+            buttons.sixteenthPlayPause.innerHTML = 'Pause';
+            buttons.sixteenthPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          }
+        });
+
+      document
+        .querySelector('#svnteenth-audio-spectrum')
+        .addEventListener('click', () => {
+          if (svnteenthSpectrum.isPlaying()) {
+            svnteenthSpectrum.play();
+            buttons.svnteenthPlayPause.innerHTML = 'Pause';
+            buttons.svnteenthPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          } else {
+            svnteenthSpectrum.play();
+            buttons.svnteenthPlayPause.innerHTML = 'Pause';
+            buttons.svnteenthPlayPause.innerHTML =
+              '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+          }
+        });
+
       buttons.playPause.addEventListener(
         //first wave
         'click',
         function () {
+          if (secondSpectrum.isPlaying()) {
+            secondSpectrum.pause();
+            buttons.secondPlayPause.value = 'Play';
+            buttons.secondPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourSpectrum.isPlaying()) {
+            fourSpectrum.pause();
+            buttons.fourPlayPause.value = 'Play';
+            buttons.fourPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifthSpectrum.isPlaying()) {
+            fifthSpectrum.pause();
+            buttons.fifthPlayPause.value = 'Play';
+            buttons.fifthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixthSpectrum.isPlaying()) {
+            sixthSpectrum.pause();
+            buttons.sixthPlayPause.value = 'Play';
+            buttons.sixthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (seventhSpectrum.isPlaying()) {
+            seventhSpectrum.pause();
+            buttons.seventhPlayPause.value = 'Play';
+            buttons.seventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eighthSpectrum.isPlaying()) {
+            eighthSpectrum.pause();
+            buttons.eighthPlayPause.value = 'Play';
+            buttons.eighthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (ninthSpectrum.isPlaying()) {
+            ninthSpectrum.pause();
+            buttons.ninthPlayPause.value = 'Play';
+            buttons.ninthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eleventhSpectrum.isPlaying()) {
+            eleventhSpectrum.pause();
+            buttons.eleventhPlayPause.value = 'Play';
+            buttons.eleventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (twlthSpectrum.isPlaying()) {
+            twlthSpectrum.pause();
+            buttons.twlthPlayPause.value = 'Play';
+            buttons.twlthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thrteenthSpectrum.isPlaying()) {
+            thrteenthSpectrum.pause();
+            buttons.thrteenthPlayPause.value = 'Play';
+            buttons.thrteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourteenthSpectrum.isPlaying()) {
+            fourteenthSpectrum.pause();
+            buttons.fourteenthPlayPause.value = 'Play';
+            buttons.fourteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifteenthSpectrum.isPlaying()) {
+            fifteenthSpectrum.pause();
+            buttons.fifteenthPlayPause.value = 'Play';
+            buttons.fifteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixteenthSpectrum.isPlaying()) {
+            sixteenthSpectrum.pause();
+            buttons.sixteenthPlayPause.value = 'Play';
+            buttons.sixteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (svnteenthSpectrum.isPlaying()) {
+            svnteenthSpectrum.pause();
+            buttons.svnteenthPlayPause.value = 'Play';
+            buttons.svnteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
           if (Spectrum.isPlaying()) {
             Spectrum.pause();
             buttons.playPause.value = 'Play';
@@ -655,6 +1009,111 @@
         //second wave
         'click',
         function () {
+          if (Spectrum.isPlaying()) {
+            Spectrum.pause();
+            buttons.playPause.value = 'Play';
+            buttons.playPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thirdSpectrum.isPlaying()) {
+            thirdSpectrum.pause();
+            buttons.thirdPlayPause.value = 'Play';
+            buttons.thirdPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourSpectrum.isPlaying()) {
+            fourSpectrum.pause();
+            buttons.fourPlayPause.value = 'Play';
+            buttons.fourPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifthSpectrum.isPlaying()) {
+            fifthSpectrum.pause();
+            buttons.fifthPlayPause.value = 'Play';
+            buttons.fifthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixthSpectrum.isPlaying()) {
+            sixthSpectrum.pause();
+            buttons.sixthPlayPause.value = 'Play';
+            buttons.sixthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (seventhSpectrum.isPlaying()) {
+            seventhSpectrum.pause();
+            buttons.seventhPlayPause.value = 'Play';
+            buttons.seventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eighthSpectrum.isPlaying()) {
+            eighthSpectrum.pause();
+            buttons.eighthPlayPause.value = 'Play';
+            buttons.eighthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (ninthSpectrum.isPlaying()) {
+            ninthSpectrum.pause();
+            buttons.ninthPlayPause.value = 'Play';
+            buttons.ninthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eleventhSpectrum.isPlaying()) {
+            eleventhSpectrum.pause();
+            buttons.eleventhPlayPause.value = 'Play';
+            buttons.eleventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (twlthSpectrum.isPlaying()) {
+            twlthSpectrum.pause();
+            buttons.twlthPlayPause.value = 'Play';
+            buttons.twlthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thrteenthSpectrum.isPlaying()) {
+            thrteenthSpectrum.pause();
+            buttons.thrteenthPlayPause.value = 'Play';
+            buttons.thrteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourteenthSpectrum.isPlaying()) {
+            fourteenthSpectrum.pause();
+            buttons.fourteenthPlayPause.value = 'Play';
+            buttons.fourteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifteenthSpectrum.isPlaying()) {
+            fifteenthSpectrum.pause();
+            buttons.fifteenthPlayPause.value = 'Play';
+            buttons.fifteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixteenthSpectrum.isPlaying()) {
+            sixteenthSpectrum.pause();
+            buttons.sixteenthPlayPause.value = 'Play';
+            buttons.sixteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (svnteenthSpectrum.isPlaying()) {
+            svnteenthSpectrum.pause();
+            buttons.svnteenthPlayPause.value = 'Play';
+            buttons.svnteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
           if (secondSpectrum.isPlaying()) {
             secondSpectrum.pause();
             buttons.secondPlayPause.value = 'Play';
@@ -674,6 +1133,111 @@
         //third wave
         'click',
         function () {
+          if (Spectrum.isPlaying()) {
+            Spectrum.pause();
+            buttons.PlayPause.value = 'Play';
+            buttons.PlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (secondSpectrum.isPlaying()) {
+            secondSpectrum.pause();
+            buttons.secondPlayPause.value = 'Play';
+            buttons.secondPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourSpectrum.isPlaying()) {
+            fourSpectrum.pause();
+            buttons.fourPlayPause.value = 'Play';
+            buttons.fourPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifthSpectrum.isPlaying()) {
+            fifthSpectrum.pause();
+            buttons.fifthPlayPause.value = 'Play';
+            buttons.fifthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixthSpectrum.isPlaying()) {
+            sixthSpectrum.pause();
+            buttons.sixthPlayPause.value = 'Play';
+            buttons.sixthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (seventhSpectrum.isPlaying()) {
+            seventhSpectrum.pause();
+            buttons.seventhPlayPause.value = 'Play';
+            buttons.seventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eighthSpectrum.isPlaying()) {
+            eighthSpectrum.pause();
+            buttons.eighthPlayPause.value = 'Play';
+            buttons.eighthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (ninthSpectrum.isPlaying()) {
+            ninthSpectrum.pause();
+            buttons.ninthPlayPause.value = 'Play';
+            buttons.ninthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eleventhSpectrum.isPlaying()) {
+            eleventhSpectrum.pause();
+            buttons.eleventhPlayPause.value = 'Play';
+            buttons.eleventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (twlthSpectrum.isPlaying()) {
+            twlthSpectrum.pause();
+            buttons.twlthPlayPause.value = 'Play';
+            buttons.twlthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thrteenthSpectrum.isPlaying()) {
+            thrteenthSpectrum.pause();
+            buttons.thrteenthPlayPause.value = 'Play';
+            buttons.thrteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourteenthSpectrum.isPlaying()) {
+            fourteenthSpectrum.pause();
+            buttons.fourteenthPlayPause.value = 'Play';
+            buttons.fourteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifteenthSpectrum.isPlaying()) {
+            fifteenthSpectrum.pause();
+            buttons.fifteenthPlayPause.value = 'Play';
+            buttons.fifteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixteenthSpectrum.isPlaying()) {
+            sixteenthSpectrum.pause();
+            buttons.sixteenthPlayPause.value = 'Play';
+            buttons.sixteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (svnteenthSpectrum.isPlaying()) {
+            svnteenthSpectrum.pause();
+            buttons.svnteenthPlayPause.value = 'Play';
+            buttons.svnteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
           if (thirdSpectrum.isPlaying()) {
             thirdSpectrum.pause();
             buttons.thirdPlayPause.value = 'Play';
@@ -693,6 +1257,111 @@
         //four wave
         'click',
         function () {
+          if (secondSpectrum.isPlaying()) {
+            secondSpectrum.pause();
+            buttons.secondPlayPause.value = 'Play';
+            buttons.secondPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thirdSpectrum.isPlaying()) {
+            thirdSpectrum.pause();
+            buttons.thirdPlayPause.value = 'Play';
+            buttons.thirdPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (Spectrum.isPlaying()) {
+            Spectrum.pause();
+            buttons.PlayPause.value = 'Play';
+            buttons.PlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifthSpectrum.isPlaying()) {
+            fifthSpectrum.pause();
+            buttons.fifthPlayPause.value = 'Play';
+            buttons.fifthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixthSpectrum.isPlaying()) {
+            sixthSpectrum.pause();
+            buttons.sixthPlayPause.value = 'Play';
+            buttons.sixthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (seventhSpectrum.isPlaying()) {
+            seventhSpectrum.pause();
+            buttons.seventhPlayPause.value = 'Play';
+            buttons.seventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eighthSpectrum.isPlaying()) {
+            eighthSpectrum.pause();
+            buttons.eighthPlayPause.value = 'Play';
+            buttons.eighthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (ninthSpectrum.isPlaying()) {
+            ninthSpectrum.pause();
+            buttons.ninthPlayPause.value = 'Play';
+            buttons.ninthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eleventhSpectrum.isPlaying()) {
+            eleventhSpectrum.pause();
+            buttons.eleventhPlayPause.value = 'Play';
+            buttons.eleventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (twlthSpectrum.isPlaying()) {
+            twlthSpectrum.pause();
+            buttons.twlthPlayPause.value = 'Play';
+            buttons.twlthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thrteenthSpectrum.isPlaying()) {
+            thrteenthSpectrum.pause();
+            buttons.thrteenthPlayPause.value = 'Play';
+            buttons.thrteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourteenthSpectrum.isPlaying()) {
+            fourteenthSpectrum.pause();
+            buttons.fourteenthPlayPause.value = 'Play';
+            buttons.fourteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifteenthSpectrum.isPlaying()) {
+            fifteenthSpectrum.pause();
+            buttons.fifteenthPlayPause.value = 'Play';
+            buttons.fifteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixteenthSpectrum.isPlaying()) {
+            sixteenthSpectrum.pause();
+            buttons.sixteenthPlayPause.value = 'Play';
+            buttons.sixteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (svnteenthSpectrum.isPlaying()) {
+            svnteenthSpectrum.pause();
+            buttons.svnteenthPlayPause.value = 'Play';
+            buttons.svnteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
           if (fourSpectrum.isPlaying()) {
             fourSpectrum.pause();
             buttons.fourPlayPause.value = 'Play';
@@ -711,6 +1380,111 @@
       buttons.fifthPlayPause.addEventListener(
         'click',
         function () {
+          if (secondSpectrum.isPlaying()) {
+            secondSpectrum.pause();
+            buttons.secondPlayPause.value = 'Play';
+            buttons.secondPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thirdSpectrum.isPlaying()) {
+            thirdSpectrum.pause();
+            buttons.thirdPlayPause.value = 'Play';
+            buttons.thirdPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourSpectrum.isPlaying()) {
+            fourSpectrum.pause();
+            buttons.fourPlayPause.value = 'Play';
+            buttons.fourPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (Spectrum.isPlaying()) {
+            Spectrum.pause();
+            buttons.PlayPause.value = 'Play';
+            buttons.PlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixthSpectrum.isPlaying()) {
+            sixthSpectrum.pause();
+            buttons.sixthPlayPause.value = 'Play';
+            buttons.sixthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (seventhSpectrum.isPlaying()) {
+            seventhSpectrum.pause();
+            buttons.seventhPlayPause.value = 'Play';
+            buttons.seventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eighthSpectrum.isPlaying()) {
+            eighthSpectrum.pause();
+            buttons.eighthPlayPause.value = 'Play';
+            buttons.eighthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (ninthSpectrum.isPlaying()) {
+            ninthSpectrum.pause();
+            buttons.ninthPlayPause.value = 'Play';
+            buttons.ninthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eleventhSpectrum.isPlaying()) {
+            eleventhSpectrum.pause();
+            buttons.eleventhPlayPause.value = 'Play';
+            buttons.eleventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (twlthSpectrum.isPlaying()) {
+            twlthSpectrum.pause();
+            buttons.twlthPlayPause.value = 'Play';
+            buttons.twlthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thrteenthSpectrum.isPlaying()) {
+            thrteenthSpectrum.pause();
+            buttons.thrteenthPlayPause.value = 'Play';
+            buttons.thrteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourteenthSpectrum.isPlaying()) {
+            fourteenthSpectrum.pause();
+            buttons.fourteenthPlayPause.value = 'Play';
+            buttons.fourteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifteenthSpectrum.isPlaying()) {
+            fifteenthSpectrum.pause();
+            buttons.fifteenthPlayPause.value = 'Play';
+            buttons.fifteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixteenthSpectrum.isPlaying()) {
+            sixteenthSpectrum.pause();
+            buttons.sixteenthPlayPause.value = 'Play';
+            buttons.sixteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (svnteenthSpectrum.isPlaying()) {
+            svnteenthSpectrum.pause();
+            buttons.svnteenthPlayPause.value = 'Play';
+            buttons.svnteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
           if (fifthSpectrum.isPlaying()) {
             fifthSpectrum.pause();
             buttons.fifthPlayPause.value = 'Play';
@@ -729,6 +1503,111 @@
       buttons.sixthPlayPause.addEventListener(
         'click',
         function () {
+          if (secondSpectrum.isPlaying()) {
+            secondSpectrum.pause();
+            buttons.secondPlayPause.value = 'Play';
+            buttons.secondPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thirdSpectrum.isPlaying()) {
+            thirdSpectrum.pause();
+            buttons.thirdPlayPause.value = 'Play';
+            buttons.thirdPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourSpectrum.isPlaying()) {
+            fourSpectrum.pause();
+            buttons.fourPlayPause.value = 'Play';
+            buttons.fourPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifthSpectrum.isPlaying()) {
+            fifthSpectrum.pause();
+            buttons.fifthPlayPause.value = 'Play';
+            buttons.fifthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (Spectrum.isPlaying()) {
+            Spectrum.pause();
+            buttons.PlayPause.value = 'Play';
+            buttons.PlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (seventhSpectrum.isPlaying()) {
+            seventhSpectrum.pause();
+            buttons.seventhPlayPause.value = 'Play';
+            buttons.seventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eighthSpectrum.isPlaying()) {
+            eighthSpectrum.pause();
+            buttons.eighthPlayPause.value = 'Play';
+            buttons.eighthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (ninthSpectrum.isPlaying()) {
+            ninthSpectrum.pause();
+            buttons.ninthPlayPause.value = 'Play';
+            buttons.ninthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eleventhSpectrum.isPlaying()) {
+            eleventhSpectrum.pause();
+            buttons.eleventhPlayPause.value = 'Play';
+            buttons.eleventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (twlthSpectrum.isPlaying()) {
+            twlthSpectrum.pause();
+            buttons.twlthPlayPause.value = 'Play';
+            buttons.twlthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thrteenthSpectrum.isPlaying()) {
+            thrteenthSpectrum.pause();
+            buttons.thrteenthPlayPause.value = 'Play';
+            buttons.thrteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourteenthSpectrum.isPlaying()) {
+            fourteenthSpectrum.pause();
+            buttons.fourteenthPlayPause.value = 'Play';
+            buttons.fourteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifteenthSpectrum.isPlaying()) {
+            fifteenthSpectrum.pause();
+            buttons.fifteenthPlayPause.value = 'Play';
+            buttons.fifteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixteenthSpectrum.isPlaying()) {
+            sixteenthSpectrum.pause();
+            buttons.sixteenthPlayPause.value = 'Play';
+            buttons.sixteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (svnteenthSpectrum.isPlaying()) {
+            svnteenthSpectrum.pause();
+            buttons.svnteenthPlayPause.value = 'Play';
+            buttons.svnteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
           if (sixthSpectrum.isPlaying()) {
             sixthSpectrum.pause();
             buttons.sixthPlayPause.value = 'Play';
@@ -747,6 +1626,111 @@
       buttons.seventhPlayPause.addEventListener(
         'click',
         function () {
+          if (secondSpectrum.isPlaying()) {
+            secondSpectrum.pause();
+            buttons.secondPlayPause.value = 'Play';
+            buttons.secondPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thirdSpectrum.isPlaying()) {
+            thirdSpectrum.pause();
+            buttons.thirdPlayPause.value = 'Play';
+            buttons.thirdPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourSpectrum.isPlaying()) {
+            fourSpectrum.pause();
+            buttons.fourPlayPause.value = 'Play';
+            buttons.fourPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifthSpectrum.isPlaying()) {
+            fifthSpectrum.pause();
+            buttons.fifthPlayPause.value = 'Play';
+            buttons.fifthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixthSpectrum.isPlaying()) {
+            sixthSpectrum.pause();
+            buttons.sixthPlayPause.value = 'Play';
+            buttons.sixthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (Spectrum.isPlaying()) {
+            Spectrum.pause();
+            buttons.PlayPause.value = 'Play';
+            buttons.PlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eighthSpectrum.isPlaying()) {
+            eighthSpectrum.pause();
+            buttons.eighthPlayPause.value = 'Play';
+            buttons.eighthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (ninthSpectrum.isPlaying()) {
+            ninthSpectrum.pause();
+            buttons.ninthPlayPause.value = 'Play';
+            buttons.ninthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eleventhSpectrum.isPlaying()) {
+            eleventhSpectrum.pause();
+            buttons.eleventhPlayPause.value = 'Play';
+            buttons.eleventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (twlthSpectrum.isPlaying()) {
+            twlthSpectrum.pause();
+            buttons.twlthPlayPause.value = 'Play';
+            buttons.twlthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thrteenthSpectrum.isPlaying()) {
+            thrteenthSpectrum.pause();
+            buttons.thrteenthPlayPause.value = 'Play';
+            buttons.thrteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourteenthSpectrum.isPlaying()) {
+            fourteenthSpectrum.pause();
+            buttons.fourteenthPlayPause.value = 'Play';
+            buttons.fourteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifteenthSpectrum.isPlaying()) {
+            fifteenthSpectrum.pause();
+            buttons.fifteenthPlayPause.value = 'Play';
+            buttons.fifteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixteenthSpectrum.isPlaying()) {
+            sixteenthSpectrum.pause();
+            buttons.sixteenthPlayPause.value = 'Play';
+            buttons.sixteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (svnteenthSpectrum.isPlaying()) {
+            svnteenthSpectrum.pause();
+            buttons.svnteenthPlayPause.value = 'Play';
+            buttons.svnteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
           if (seventhSpectrum.isPlaying()) {
             seventhSpectrum.pause();
             buttons.seventhPlayPause.value = 'Play';
@@ -765,6 +1749,111 @@
       buttons.eighthPlayPause.addEventListener(
         'click',
         function () {
+          if (secondSpectrum.isPlaying()) {
+            secondSpectrum.pause();
+            buttons.secondPlayPause.value = 'Play';
+            buttons.secondPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thirdSpectrum.isPlaying()) {
+            thirdSpectrum.pause();
+            buttons.thirdPlayPause.value = 'Play';
+            buttons.thirdPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourSpectrum.isPlaying()) {
+            fourSpectrum.pause();
+            buttons.fourPlayPause.value = 'Play';
+            buttons.fourPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifthSpectrum.isPlaying()) {
+            fifthSpectrum.pause();
+            buttons.fifthPlayPause.value = 'Play';
+            buttons.fifthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixthSpectrum.isPlaying()) {
+            sixthSpectrum.pause();
+            buttons.sixthPlayPause.value = 'Play';
+            buttons.sixthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (seventhSpectrum.isPlaying()) {
+            seventhSpectrum.pause();
+            buttons.seventhPlayPause.value = 'Play';
+            buttons.seventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (Spectrum.isPlaying()) {
+            Spectrum.pause();
+            buttons.PlayPause.value = 'Play';
+            buttons.PlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (ninthSpectrum.isPlaying()) {
+            ninthSpectrum.pause();
+            buttons.ninthPlayPause.value = 'Play';
+            buttons.ninthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eleventhSpectrum.isPlaying()) {
+            eleventhSpectrum.pause();
+            buttons.eleventhPlayPause.value = 'Play';
+            buttons.eleventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (twlthSpectrum.isPlaying()) {
+            twlthSpectrum.pause();
+            buttons.twlthPlayPause.value = 'Play';
+            buttons.twlthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thrteenthSpectrum.isPlaying()) {
+            thrteenthSpectrum.pause();
+            buttons.thrteenthPlayPause.value = 'Play';
+            buttons.thrteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourteenthSpectrum.isPlaying()) {
+            fourteenthSpectrum.pause();
+            buttons.fourteenthPlayPause.value = 'Play';
+            buttons.fourteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifteenthSpectrum.isPlaying()) {
+            fifteenthSpectrum.pause();
+            buttons.fifteenthPlayPause.value = 'Play';
+            buttons.fifteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixteenthSpectrum.isPlaying()) {
+            sixteenthSpectrum.pause();
+            buttons.sixteenthPlayPause.value = 'Play';
+            buttons.sixteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (svnteenthSpectrum.isPlaying()) {
+            svnteenthSpectrum.pause();
+            buttons.svnteenthPlayPause.value = 'Play';
+            buttons.svnteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
           if (eighthSpectrum.isPlaying()) {
             eighthSpectrum.pause();
             buttons.eighthPlayPause.value = 'Play';
@@ -783,6 +1872,111 @@
       buttons.ninthPlayPause.addEventListener(
         'click',
         function () {
+          if (secondSpectrum.isPlaying()) {
+            secondSpectrum.pause();
+            buttons.secondPlayPause.value = 'Play';
+            buttons.secondPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thirdSpectrum.isPlaying()) {
+            thirdSpectrum.pause();
+            buttons.thirdPlayPause.value = 'Play';
+            buttons.thirdPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourSpectrum.isPlaying()) {
+            fourSpectrum.pause();
+            buttons.fourPlayPause.value = 'Play';
+            buttons.fourPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifthSpectrum.isPlaying()) {
+            fifthSpectrum.pause();
+            buttons.fifthPlayPause.value = 'Play';
+            buttons.fifthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixthSpectrum.isPlaying()) {
+            sixthSpectrum.pause();
+            buttons.sixthPlayPause.value = 'Play';
+            buttons.sixthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (seventhSpectrum.isPlaying()) {
+            seventhSpectrum.pause();
+            buttons.seventhPlayPause.value = 'Play';
+            buttons.seventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eighthSpectrum.isPlaying()) {
+            eighthSpectrum.pause();
+            buttons.eighthPlayPause.value = 'Play';
+            buttons.eighthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (Spectrum.isPlaying()) {
+            Spectrum.pause();
+            buttons.PlayPause.value = 'Play';
+            buttons.PlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eleventhSpectrum.isPlaying()) {
+            eleventhSpectrum.pause();
+            buttons.eleventhPlayPause.value = 'Play';
+            buttons.eleventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (twlthSpectrum.isPlaying()) {
+            twlthSpectrum.pause();
+            buttons.twlthPlayPause.value = 'Play';
+            buttons.twlthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thrteenthSpectrum.isPlaying()) {
+            thrteenthSpectrum.pause();
+            buttons.thrteenthPlayPause.value = 'Play';
+            buttons.thrteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourteenthSpectrum.isPlaying()) {
+            fourteenthSpectrum.pause();
+            buttons.fourteenthPlayPause.value = 'Play';
+            buttons.fourteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifteenthSpectrum.isPlaying()) {
+            fifteenthSpectrum.pause();
+            buttons.fifteenthPlayPause.value = 'Play';
+            buttons.fifteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixteenthSpectrum.isPlaying()) {
+            sixteenthSpectrum.pause();
+            buttons.sixteenthPlayPause.value = 'Play';
+            buttons.sixteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (svnteenthSpectrum.isPlaying()) {
+            svnteenthSpectrum.pause();
+            buttons.svnteenthPlayPause.value = 'Play';
+            buttons.svnteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
           if (ninthSpectrum.isPlaying()) {
             ninthSpectrum.pause();
             buttons.ninthPlayPause.value = 'Play';
@@ -798,7 +1992,7 @@
         false
       );
 
-      buttons.tenthPlayPause.addEventListener(
+      /*buttons.tenthPlayPause.addEventListener(
         'click',
         function () {
           if (tenthSpectrum.isPlaying()) {
@@ -814,11 +2008,116 @@
           }
         },
         false
-      );
+      );*/
 
       buttons.eleventhPlayPause.addEventListener(
         'click',
         function () {
+          if (secondSpectrum.isPlaying()) {
+            secondSpectrum.pause();
+            buttons.secondPlayPause.value = 'Play';
+            buttons.secondPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thirdSpectrum.isPlaying()) {
+            thirdSpectrum.pause();
+            buttons.thirdPlayPause.value = 'Play';
+            buttons.thirdPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourSpectrum.isPlaying()) {
+            fourSpectrum.pause();
+            buttons.fourPlayPause.value = 'Play';
+            buttons.fourPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifthSpectrum.isPlaying()) {
+            fifthSpectrum.pause();
+            buttons.fifthPlayPause.value = 'Play';
+            buttons.fifthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixthSpectrum.isPlaying()) {
+            sixthSpectrum.pause();
+            buttons.sixthPlayPause.value = 'Play';
+            buttons.sixthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (seventhSpectrum.isPlaying()) {
+            seventhSpectrum.pause();
+            buttons.seventhPlayPause.value = 'Play';
+            buttons.seventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eighthSpectrum.isPlaying()) {
+            eighthSpectrum.pause();
+            buttons.eighthPlayPause.value = 'Play';
+            buttons.eighthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (ninthSpectrum.isPlaying()) {
+            ninthSpectrum.pause();
+            buttons.ninthPlayPause.value = 'Play';
+            buttons.ninthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (Spectrum.isPlaying()) {
+            Spectrum.pause();
+            buttons.PlayPause.value = 'Play';
+            buttons.PlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (twlthSpectrum.isPlaying()) {
+            twlthSpectrum.pause();
+            buttons.twlthPlayPause.value = 'Play';
+            buttons.twlthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thrteenthSpectrum.isPlaying()) {
+            thrteenthSpectrum.pause();
+            buttons.thrteenthPlayPause.value = 'Play';
+            buttons.thrteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourteenthSpectrum.isPlaying()) {
+            fourteenthSpectrum.pause();
+            buttons.fourteenthPlayPause.value = 'Play';
+            buttons.fourteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifteenthSpectrum.isPlaying()) {
+            fifteenthSpectrum.pause();
+            buttons.fifteenthPlayPause.value = 'Play';
+            buttons.fifteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixteenthSpectrum.isPlaying()) {
+            sixteenthSpectrum.pause();
+            buttons.sixteenthPlayPause.value = 'Play';
+            buttons.sixteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (svnteenthSpectrum.isPlaying()) {
+            svnteenthSpectrum.pause();
+            buttons.svnteenthPlayPause.value = 'Play';
+            buttons.svnteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
           if (eleventhSpectrum.isPlaying()) {
             eleventhSpectrum.pause();
             buttons.eleventhPlayPause.value = 'Play';
@@ -837,6 +2136,111 @@
       buttons.twlthPlayPause.addEventListener(
         'click',
         function () {
+          if (secondSpectrum.isPlaying()) {
+            secondSpectrum.pause();
+            buttons.secondPlayPause.value = 'Play';
+            buttons.secondPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thirdSpectrum.isPlaying()) {
+            thirdSpectrum.pause();
+            buttons.thirdPlayPause.value = 'Play';
+            buttons.thirdPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourSpectrum.isPlaying()) {
+            fourSpectrum.pause();
+            buttons.fourPlayPause.value = 'Play';
+            buttons.fourPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifthSpectrum.isPlaying()) {
+            fifthSpectrum.pause();
+            buttons.fifthPlayPause.value = 'Play';
+            buttons.fifthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixthSpectrum.isPlaying()) {
+            sixthSpectrum.pause();
+            buttons.sixthPlayPause.value = 'Play';
+            buttons.sixthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (seventhSpectrum.isPlaying()) {
+            seventhSpectrum.pause();
+            buttons.seventhPlayPause.value = 'Play';
+            buttons.seventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eighthSpectrum.isPlaying()) {
+            eighthSpectrum.pause();
+            buttons.eighthPlayPause.value = 'Play';
+            buttons.eighthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (ninthSpectrum.isPlaying()) {
+            ninthSpectrum.pause();
+            buttons.ninthPlayPause.value = 'Play';
+            buttons.ninthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eleventhSpectrum.isPlaying()) {
+            eleventhSpectrum.pause();
+            buttons.eleventhPlayPause.value = 'Play';
+            buttons.eleventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (Spectrum.isPlaying()) {
+            Spectrum.pause();
+            buttons.PlayPause.value = 'Play';
+            buttons.PlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thrteenthSpectrum.isPlaying()) {
+            thrteenthSpectrum.pause();
+            buttons.thrteenthPlayPause.value = 'Play';
+            buttons.thrteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourteenthSpectrum.isPlaying()) {
+            fourteenthSpectrum.pause();
+            buttons.fourteenthPlayPause.value = 'Play';
+            buttons.fourteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifteenthSpectrum.isPlaying()) {
+            fifteenthSpectrum.pause();
+            buttons.fifteenthPlayPause.value = 'Play';
+            buttons.fifteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixteenthSpectrum.isPlaying()) {
+            sixteenthSpectrum.pause();
+            buttons.sixteenthPlayPause.value = 'Play';
+            buttons.sixteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (svnteenthSpectrum.isPlaying()) {
+            svnteenthSpectrum.pause();
+            buttons.svnteenthPlayPause.value = 'Play';
+            buttons.svnteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
           if (twlthSpectrum.isPlaying()) {
             twlthSpectrum.pause();
             buttons.twlthPlayPause.value = 'Play';
@@ -855,6 +2259,111 @@
       buttons.thrteenthPlayPause.addEventListener(
         'click',
         function () {
+          if (secondSpectrum.isPlaying()) {
+            secondSpectrum.pause();
+            buttons.secondPlayPause.value = 'Play';
+            buttons.secondPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thirdSpectrum.isPlaying()) {
+            thirdSpectrum.pause();
+            buttons.thirdPlayPause.value = 'Play';
+            buttons.thirdPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourSpectrum.isPlaying()) {
+            fourSpectrum.pause();
+            buttons.fourPlayPause.value = 'Play';
+            buttons.fourPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifthSpectrum.isPlaying()) {
+            fifthSpectrum.pause();
+            buttons.fifthPlayPause.value = 'Play';
+            buttons.fifthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixthSpectrum.isPlaying()) {
+            sixthSpectrum.pause();
+            buttons.sixthPlayPause.value = 'Play';
+            buttons.sixthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (seventhSpectrum.isPlaying()) {
+            seventhSpectrum.pause();
+            buttons.seventhPlayPause.value = 'Play';
+            buttons.seventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eighthSpectrum.isPlaying()) {
+            eighthSpectrum.pause();
+            buttons.eighthPlayPause.value = 'Play';
+            buttons.eighthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (ninthSpectrum.isPlaying()) {
+            ninthSpectrum.pause();
+            buttons.ninthPlayPause.value = 'Play';
+            buttons.ninthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eleventhSpectrum.isPlaying()) {
+            eleventhSpectrum.pause();
+            buttons.eleventhPlayPause.value = 'Play';
+            buttons.eleventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (twlthSpectrum.isPlaying()) {
+            twlthSpectrum.pause();
+            buttons.twlthPlayPause.value = 'Play';
+            buttons.twlthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (Spectrum.isPlaying()) {
+            Spectrum.pause();
+            buttons.PlayPause.value = 'Play';
+            buttons.PlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourteenthSpectrum.isPlaying()) {
+            fourteenthSpectrum.pause();
+            buttons.fourteenthPlayPause.value = 'Play';
+            buttons.fourteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifteenthSpectrum.isPlaying()) {
+            fifteenthSpectrum.pause();
+            buttons.fifteenthPlayPause.value = 'Play';
+            buttons.fifteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixteenthSpectrum.isPlaying()) {
+            sixteenthSpectrum.pause();
+            buttons.sixteenthPlayPause.value = 'Play';
+            buttons.sixteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (svnteenthSpectrum.isPlaying()) {
+            svnteenthSpectrum.pause();
+            buttons.svnteenthPlayPause.value = 'Play';
+            buttons.svnteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
           if (thrteenthSpectrum.isPlaying()) {
             thrteenthSpectrum.pause();
             buttons.thrteenthPlayPause.value = 'Play';
@@ -873,6 +2382,111 @@
       buttons.fourteenthPlayPause.addEventListener(
         'click',
         function () {
+          if (secondSpectrum.isPlaying()) {
+            secondSpectrum.pause();
+            buttons.secondPlayPause.value = 'Play';
+            buttons.secondPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thirdSpectrum.isPlaying()) {
+            thirdSpectrum.pause();
+            buttons.thirdPlayPause.value = 'Play';
+            buttons.thirdPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourSpectrum.isPlaying()) {
+            fourSpectrum.pause();
+            buttons.fourPlayPause.value = 'Play';
+            buttons.fourPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifthSpectrum.isPlaying()) {
+            fifthSpectrum.pause();
+            buttons.fifthPlayPause.value = 'Play';
+            buttons.fifthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixthSpectrum.isPlaying()) {
+            sixthSpectrum.pause();
+            buttons.sixthPlayPause.value = 'Play';
+            buttons.sixthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (seventhSpectrum.isPlaying()) {
+            seventhSpectrum.pause();
+            buttons.seventhPlayPause.value = 'Play';
+            buttons.seventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eighthSpectrum.isPlaying()) {
+            eighthSpectrum.pause();
+            buttons.eighthPlayPause.value = 'Play';
+            buttons.eighthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (ninthSpectrum.isPlaying()) {
+            ninthSpectrum.pause();
+            buttons.ninthPlayPause.value = 'Play';
+            buttons.ninthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eleventhSpectrum.isPlaying()) {
+            eleventhSpectrum.pause();
+            buttons.eleventhPlayPause.value = 'Play';
+            buttons.eleventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (twlthSpectrum.isPlaying()) {
+            twlthSpectrum.pause();
+            buttons.twlthPlayPause.value = 'Play';
+            buttons.twlthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thrteenthSpectrum.isPlaying()) {
+            thrteenthSpectrum.pause();
+            buttons.thrteenthPlayPause.value = 'Play';
+            buttons.thrteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (Spectrum.isPlaying()) {
+            Spectrum.pause();
+            buttons.PlayPause.value = 'Play';
+            buttons.PlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifteenthSpectrum.isPlaying()) {
+            fifteenthSpectrum.pause();
+            buttons.fifteenthPlayPause.value = 'Play';
+            buttons.fifteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixteenthSpectrum.isPlaying()) {
+            sixteenthSpectrum.pause();
+            buttons.sixteenthPlayPause.value = 'Play';
+            buttons.sixteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (svnteenthSpectrum.isPlaying()) {
+            svnteenthSpectrum.pause();
+            buttons.svnteenthPlayPause.value = 'Play';
+            buttons.svnteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
           if (fourteenthSpectrum.isPlaying()) {
             fourteenthSpectrum.pause();
             buttons.fourteenthPlayPause.value = 'Play';
@@ -891,6 +2505,111 @@
       buttons.fifteenthPlayPause.addEventListener(
         'click',
         function () {
+          if (secondSpectrum.isPlaying()) {
+            secondSpectrum.pause();
+            buttons.secondPlayPause.value = 'Play';
+            buttons.secondPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thirdSpectrum.isPlaying()) {
+            thirdSpectrum.pause();
+            buttons.thirdPlayPause.value = 'Play';
+            buttons.thirdPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourSpectrum.isPlaying()) {
+            fourSpectrum.pause();
+            buttons.fourPlayPause.value = 'Play';
+            buttons.fourPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifthSpectrum.isPlaying()) {
+            fifthSpectrum.pause();
+            buttons.fifthPlayPause.value = 'Play';
+            buttons.fifthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixthSpectrum.isPlaying()) {
+            sixthSpectrum.pause();
+            buttons.sixthPlayPause.value = 'Play';
+            buttons.sixthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (seventhSpectrum.isPlaying()) {
+            seventhSpectrum.pause();
+            buttons.seventhPlayPause.value = 'Play';
+            buttons.seventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eighthSpectrum.isPlaying()) {
+            eighthSpectrum.pause();
+            buttons.eighthPlayPause.value = 'Play';
+            buttons.eighthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (ninthSpectrum.isPlaying()) {
+            ninthSpectrum.pause();
+            buttons.ninthPlayPause.value = 'Play';
+            buttons.ninthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eleventhSpectrum.isPlaying()) {
+            eleventhSpectrum.pause();
+            buttons.eleventhPlayPause.value = 'Play';
+            buttons.eleventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (twlthSpectrum.isPlaying()) {
+            twlthSpectrum.pause();
+            buttons.twlthPlayPause.value = 'Play';
+            buttons.twlthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thrteenthSpectrum.isPlaying()) {
+            thrteenthSpectrum.pause();
+            buttons.thrteenthPlayPause.value = 'Play';
+            buttons.thrteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourteenthSpectrum.isPlaying()) {
+            fourteenthSpectrum.pause();
+            buttons.fourteenthPlayPause.value = 'Play';
+            buttons.fourteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (Spectrum.isPlaying()) {
+            Spectrum.pause();
+            buttons.PlayPause.value = 'Play';
+            buttons.PlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixteenthSpectrum.isPlaying()) {
+            sixteenthSpectrum.pause();
+            buttons.sixteenthPlayPause.value = 'Play';
+            buttons.sixteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (svnteenthSpectrum.isPlaying()) {
+            svnteenthSpectrum.pause();
+            buttons.svnteenthPlayPause.value = 'Play';
+            buttons.svnteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
           if (fifteenthSpectrum.isPlaying()) {
             fifteenthSpectrum.pause();
             buttons.fifteenthPlayPause.value = 'Play';
@@ -909,6 +2628,111 @@
       buttons.sixteenthPlayPause.addEventListener(
         'click',
         function () {
+          if (secondSpectrum.isPlaying()) {
+            secondSpectrum.pause();
+            buttons.secondPlayPause.value = 'Play';
+            buttons.secondPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thirdSpectrum.isPlaying()) {
+            thirdSpectrum.pause();
+            buttons.thirdPlayPause.value = 'Play';
+            buttons.thirdPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourSpectrum.isPlaying()) {
+            fourSpectrum.pause();
+            buttons.fourPlayPause.value = 'Play';
+            buttons.fourPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifthSpectrum.isPlaying()) {
+            fifthSpectrum.pause();
+            buttons.fifthPlayPause.value = 'Play';
+            buttons.fifthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixthSpectrum.isPlaying()) {
+            sixthSpectrum.pause();
+            buttons.sixthPlayPause.value = 'Play';
+            buttons.sixthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (seventhSpectrum.isPlaying()) {
+            seventhSpectrum.pause();
+            buttons.seventhPlayPause.value = 'Play';
+            buttons.seventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eighthSpectrum.isPlaying()) {
+            eighthSpectrum.pause();
+            buttons.eighthPlayPause.value = 'Play';
+            buttons.eighthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (ninthSpectrum.isPlaying()) {
+            ninthSpectrum.pause();
+            buttons.ninthPlayPause.value = 'Play';
+            buttons.ninthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eleventhSpectrum.isPlaying()) {
+            eleventhSpectrum.pause();
+            buttons.eleventhPlayPause.value = 'Play';
+            buttons.eleventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (twlthSpectrum.isPlaying()) {
+            twlthSpectrum.pause();
+            buttons.twlthPlayPause.value = 'Play';
+            buttons.twlthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thrteenthSpectrum.isPlaying()) {
+            thrteenthSpectrum.pause();
+            buttons.thrteenthPlayPause.value = 'Play';
+            buttons.thrteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourteenthSpectrum.isPlaying()) {
+            fourteenthSpectrum.pause();
+            buttons.fourteenthPlayPause.value = 'Play';
+            buttons.fourteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifteenthSpectrum.isPlaying()) {
+            fifteenthSpectrum.pause();
+            buttons.fifteenthPlayPause.value = 'Play';
+            buttons.fifteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (Spectrum.isPlaying()) {
+            Spectrum.pause();
+            buttons.PlayPause.value = 'Play';
+            buttons.PlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (svnteenthSpectrum.isPlaying()) {
+            svnteenthSpectrum.pause();
+            buttons.svnteenthPlayPause.value = 'Play';
+            buttons.svnteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
           if (sixteenthSpectrum.isPlaying()) {
             sixteenthSpectrum.pause();
             buttons.sixteenthPlayPause.value = 'Play';
@@ -927,6 +2751,111 @@
       buttons.svnteenthPlayPause.addEventListener(
         'click',
         function () {
+          if (secondSpectrum.isPlaying()) {
+            secondSpectrum.pause();
+            buttons.secondPlayPause.value = 'Play';
+            buttons.secondPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thirdSpectrum.isPlaying()) {
+            thirdSpectrum.pause();
+            buttons.thirdPlayPause.value = 'Play';
+            buttons.thirdPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourSpectrum.isPlaying()) {
+            fourSpectrum.pause();
+            buttons.fourPlayPause.value = 'Play';
+            buttons.fourPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifthSpectrum.isPlaying()) {
+            fifthSpectrum.pause();
+            buttons.fifthPlayPause.value = 'Play';
+            buttons.fifthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixthSpectrum.isPlaying()) {
+            sixthSpectrum.pause();
+            buttons.sixthPlayPause.value = 'Play';
+            buttons.sixthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (seventhSpectrum.isPlaying()) {
+            seventhSpectrum.pause();
+            buttons.seventhPlayPause.value = 'Play';
+            buttons.seventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eighthSpectrum.isPlaying()) {
+            eighthSpectrum.pause();
+            buttons.eighthPlayPause.value = 'Play';
+            buttons.eighthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (ninthSpectrum.isPlaying()) {
+            ninthSpectrum.pause();
+            buttons.ninthPlayPause.value = 'Play';
+            buttons.ninthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (eleventhSpectrum.isPlaying()) {
+            eleventhSpectrum.pause();
+            buttons.eleventhPlayPause.value = 'Play';
+            buttons.eleventhPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (twlthSpectrum.isPlaying()) {
+            twlthSpectrum.pause();
+            buttons.twlthPlayPause.value = 'Play';
+            buttons.twlthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (thrteenthSpectrum.isPlaying()) {
+            thrteenthSpectrum.pause();
+            buttons.thrteenthPlayPause.value = 'Play';
+            buttons.thrteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fourteenthSpectrum.isPlaying()) {
+            fourteenthSpectrum.pause();
+            buttons.fourteenthPlayPause.value = 'Play';
+            buttons.fourteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (fifteenthSpectrum.isPlaying()) {
+            fifteenthSpectrum.pause();
+            buttons.fifteenthPlayPause.value = 'Play';
+            buttons.fifteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (sixteenthSpectrum.isPlaying()) {
+            sixteenthSpectrum.pause();
+            buttons.sixteenthPlayPause.value = 'Play';
+            buttons.sixteenthPlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
+          if (Spectrum.isPlaying()) {
+            Spectrum.pause();
+            buttons.PlayPause.value = 'Play';
+            buttons.PlayPause.innerHTML =
+              '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+          }
+
           if (svnteenthSpectrum.isPlaying()) {
             svnteenthSpectrum.pause();
             buttons.svnteenthPlayPause.value = 'Play';
@@ -987,9 +2916,9 @@
         buttons.ninthPlayPause.disabled = false;
       });
 
-      tenthSpectrum.on('ready', function () {
+      /*tenthSpectrum.on('ready', function () {
         buttons.tenthPlayPause.disabled = false;
-      });
+      });*/
 
       eleventhSpectrum.on('ready', function () {
         //ninth wave
@@ -1123,14 +3052,14 @@
 
           //<--------------------------------------------------------------->
 
-          var tenthcurrentProgress =
+          /*var tenthcurrentProgress =
             tenthSpectrum.getCurrentTime() / tenthSpectrum.getDuration();
 
           tenthSpectrum.drawer.containerWidth =
             tenthSpectrum.drawer.container.clientWidth;
 
           tenthSpectrum.drawBuffer();
-          tenthSpectrum.seekTo(tenthSpectrum);
+          tenthSpectrum.seekTo(tenthSpectrum);*/
 
           //<--------------------------------------------------------------->
 
@@ -1156,7 +3085,8 @@
           //<--------------------------------------------------------------->
 
           var thrteenthcurrentProgress =
-            thrteenthSpectrum.getCurrentTime() / thrteenthSpectrum.getDuration();
+            thrteenthSpectrum.getCurrentTime() /
+            thrteenthSpectrum.getDuration();
 
           thrteenthSpectrum.drawer.containerWidth =
             thrteenthSpectrum.drawer.container.clientWidth;
@@ -1167,7 +3097,8 @@
           //<--------------------------------------------------------------->
 
           var fourteenthcurrentProgress =
-            fourteenthSpectrum.getCurrentTime() / fourteenthSpectrum.getDuration();
+            fourteenthSpectrum.getCurrentTime() /
+            fourteenthSpectrum.getDuration();
 
           fourteenthSpectrum.drawer.containerWidth =
             fourteenthSpectrum.drawer.container.clientWidth;
@@ -1178,7 +3109,8 @@
           //<--------------------------------------------------------------->
 
           var fifteenthcurrentProgress =
-            fifteenthSpectrum.getCurrentTime() / fifteenthSpectrum.getDuration();
+            fifteenthSpectrum.getCurrentTime() /
+            fifteenthSpectrum.getDuration();
 
           fifteenthSpectrum.drawer.containerWidth =
             fifteenthSpectrum.drawer.container.clientWidth;
@@ -1189,7 +3121,8 @@
           //<--------------------------------------------------------------->
 
           var sixteenthcurrentProgress =
-            sixteenthSpectrum.getCurrentTime() / sixteenthSpectrum.getDuration();
+            sixteenthSpectrum.getCurrentTime() /
+            sixteenthSpectrum.getDuration();
 
           sixteenthSpectrum.drawer.containerWidth =
             sixteenthSpectrum.drawer.container.clientWidth;
@@ -1200,7 +3133,8 @@
           //<--------------------------------------------------------------->
 
           var svnteenthcurrentProgress =
-            svnteenthSpectrum.getCurrentTime() / svnteenthSpectrum.getDuration();
+            svnteenthSpectrum.getCurrentTime() /
+            svnteenthSpectrum.getDuration();
 
           svnteenthSpectrum.drawer.containerWidth =
             svnteenthSpectrum.drawer.container.clientWidth;
@@ -1229,7 +3163,7 @@
 
       ninthSpectrum.load('./tracks/dirty diana.mp3'); //ninth wave
 
-      tenthSpectrum.load('./tracks/dirty diana.mp3'); //tenth wave
+      //tenthSpectrum.load('./tracks/dirty diana.mp3'); //tenth wave
 
       eleventhSpectrum.load('./tracks/Burn remaster 4.mp3'); //eleventh wave
 
