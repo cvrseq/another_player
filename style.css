@@ -78,12 +78,13 @@ html {
 
 .track1 {
   color: #ffffff;
-  bottom: 25px;
-  left: 50px;
+  bottom: 1.5rem;
+  left: 3rem;
   position: relative;
   font-size: 14px;
   font-family: 'Tilda';
 }
+
 
 @media (max-width: 768px) {
   * {
