@@ -6,11 +6,23 @@ body {
   overflow-y: hidden;
   margin: 0;
   width: 100%;
-  padding: 15rem;
+  padding: 5rem;
 }
 
 html {
   overflow-x: hidden;
+}
+
+.icon a {
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.icon a:hover,
+.icon a:visited,
+.icon a:active {
+  color: inherit;
 }
 
 #playPause,
@@ -26,9 +38,11 @@ html {
 #playPause12,
 #playPause13,
 #playPause14,
-#playPause15,
-#playPause16,
-#playPause17 {
+#playPause17,
+#playPause18,
+#playPause19,
+#playPause20,
+#playPause21 {
   width: 2rem;
   height: 2rem;
   display: block;
@@ -51,9 +65,11 @@ html {
 #playPause12:hover,
 #playPause13:hover,
 #playPause14:hover,
-#playPause15:hover,
-#playPause16:hover,
-#playPause17:hover {
+#playPause17:hover,
+#playPause18:hover,
+#playPause19:hover,
+#playPause20:hover,
+#playPause21:hover {
   transform: scale(1.1);
   filter: brightness(1.5);
 }
@@ -73,9 +89,28 @@ html {
 }
 
 .wave {
-  width: 70%;
+  width: 85%;
 }
 
+.icon-container {
+  display: flex;
+  position: relative;
+  gap: 1rem;
+  justify-content: start;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  color: #f9f9f9;
+  font-size: 2.5rem;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  filter: brightness(1.5);
+}
 .track1 {
   color: #ffffff;
   bottom: 1.5rem;
@@ -84,7 +119,6 @@ html {
   font-size: 14px;
   font-family: 'Tilda';
 }
-
 
 @media (max-width: 768px) {
   * {
@@ -103,7 +137,6 @@ html {
     box-sizing: border-box;
   }
 
-
   #audio-spectrum,
   #second-audio-spectrum,
   #third-audio-spectrum,
@@ -116,15 +149,11 @@ html {
   #eleventh-audio-spectrum,
   #twlth-audio-spectrum,
   #thrteenth-audio-spectrum,
-  #fourth-audio-spectrum,
-  #fifteenth-audio-spectrum,
-  #sixteenth-audio-spectrum,
-  #svnteenth-audio-spectrum{
+  #svnteenth-audio-spectrum {
     width: 90%;
     max-width: 700px;
     margin: 0 auto;
   }
-
 
   .control svg {
     width: 1.5rem;
