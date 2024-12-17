@@ -27,7 +27,7 @@
           </svg>
 
           <div class="track1">
-            <strong>Последний Бой </strong>из кинофильма "Бессмертный Полк"
+            <strong>Бой </strong>из кинофильма "Бессмертный Полк"
           </div>
         </div>
         <div id="audio-spectrum" class="wave"></div>
@@ -1120,15 +1120,10 @@
         });
 
       Spectrum.load(
-        './tracks/Posledniy boy v2.mp3' /*,
+        './tracks/Posledniy boy v2.mp3',
         [0.02, 0.15, 0.25, 0.3, 0.4, 0.35, 0.45, 0.5, 0.4, 0.3],
-        122*/
+        122
       ); //first wave
-
-      Spectrum.on('ready', () => {
-        const peaks = Spectrum.exportPeaks(); // получаем пики
-        console.log(peaks);
-      });
 
       secondSpectrum.load(
         './tracks/Vechno Zhivem.mp3' /*,
@@ -1137,7 +1132,7 @@
       );
 
       secondSpectrum.on('ready', () => {
-        const peaks = secondSpectrum.exportPeaks(); // получаем пики
+        const peaks = secondSpectrum.exportPeaks(); 
         console.log(peaks);
       });
 
