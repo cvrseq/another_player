@@ -6,11 +6,55 @@ body {
   overflow-y: hidden;
   margin: 0;
   width: 100%;
-  padding: 1rem;
 }
 
 html {
   overflow-x: hidden;
+}
+
+.container-avatar {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.avatar #avatar {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#avatar {
+  width: 100%;
+  height: 100%;
+}
+
+.author {
+  display: grid;
+  position: relative;
+  justify-content: center;
+}
+
+.container-description {
+  display: grid;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+
+.name {
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Tilda';
+}
+
+.description {
+  color: white;
+  font-size: 1rem;
+  font-family: 'Tilda';
+  line-height: 1.5;
 }
 
 .icon a {
@@ -86,6 +130,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 2rem;
 }
 
 .wave {
@@ -128,14 +173,35 @@ html {
   body {
     overflow-x: hidden;
     width: 100%;
-    padding: 1rem;
+  }
+
+  .container-avatar {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .avatar #avatar {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  #avatar {
+    width: 100%;
+    height: 100%;
   }
 
   .container-spectrum {
     display: flex;
     max-width: 100%;
     box-sizing: border-box;
-    align-items: flex-start;
+  }
+
+  .wave {
+    width: 100%;
   }
 
   #audio-spectrum,
@@ -161,9 +227,12 @@ html {
     margin: 0 auto;
   }
 
-  .control svg {
-    width: 1.5rem;
-    height: 1.5rem;
+  .name {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 10px;
   }
 
   .for-tracks {
