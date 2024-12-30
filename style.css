@@ -6,7 +6,7 @@ body {
   overflow-y: hidden;
   margin: 0;
   width: 100%;
-  padding: 5rem;
+  padding: 1rem;
 }
 
 html {
@@ -89,14 +89,14 @@ html {
 }
 
 .wave {
-  width: 85%;
+  width: 100%;
 }
 
 .icon-container {
   display: flex;
   position: relative;
   gap: 1rem;
-  justify-content: start;
+  justify-content: center;
   margin-bottom: 1rem;
 }
 
