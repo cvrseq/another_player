@@ -1,4 +1,4 @@
-# Another Player
+# Wavesurfer.js Player
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
@@ -17,7 +17,7 @@ Another Player — это простой и стильный аудиоплее�
 
 ## 🖼️ Скриншоты
 
-<img src="https://github.com/cvrseq/another_player/blob/main/screenshots/example.png" width="600" alt="Пример интерфейса">
+![Screenshot 2024-12-31 at 21 39 46](https://github.com/user-attachments/assets/9a0410d2-9349-43fe-9ffe-fde7c0dfab24)
 
 ---
 
@@ -28,3 +28,4 @@ Another Player — это простой и стильный аудиоплее�
 ```bash
 git clone https://github.com/cvrseq/another_player.git
 cd another_player
+
