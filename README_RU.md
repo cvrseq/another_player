@@ -86,7 +86,7 @@ audiowaveform -i your_audio.mp3 -o peaks.json --pixels-per-second 20
 
 Ищете стильный и удобный аудиоплеер для вашего проекта?
 
-Another Player идеально подойдёт для:
+WaveSurfer.js Player идеально подойдёт для:
 
     Личных музыкальных портфолио.
     Сайтов с подкастами или обучающими материалами.
