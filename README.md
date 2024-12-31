@@ -65,8 +65,9 @@ another_player/
 
 ## ⚙️ Usage
 
-    Place your tracks in the tracks/ folder.
-    Update peaks.json for each track. Use audiowaveform to generate peaks:
+Place your tracks in the tracks/ folder.
+Update peaks.json for each track. Use audiowaveform to generate peaks:
+    
 ```bash
 audiowaveform -i your_audio.mp3 -o peaks.json --pixels-per-second 20
 ```
