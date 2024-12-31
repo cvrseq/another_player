@@ -66,14 +66,14 @@ async function initTracks() {
   );
   loadTrack(
     thirdSpectrum,
-    'rage2.mp3',
+    'Burn remaster 4.mp3',
     'third-audio-spectrum',
     buttons.thirdPlayPause,
     tracks
   );
   loadTrack(
     fourSpectrum,
-    'Burn remaster 4.mp3',
+    'rage2.mp3',
     'four-audio-spectrum',
     buttons.fourPlayPause,
     tracks
