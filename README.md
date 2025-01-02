@@ -53,14 +53,14 @@ Upload all project files to your hosting provider with HTML, CSS, and JavaScript
 ## 📂Project Structure
 ```plaintext
 another_player/
-├── photos/          # Изображения для сайта
-├── tracks/          # Треки для воспроизведения
-├── TildaSans.07TTF/ # Шрифты
-├── index.html       # Главная HTML-страница
-├── style.css        # Стили
-├── script.js        # Основной JavaScript-код
-├── peaks.json       # Пики для визуализации треков
-└── LICENSE          # Лицензия
+├── photos/          # img
+├── tracks/          # tracks
+├── TildaSans.07TTF/ # fonts
+├── index.html       # main page
+├── style.css        # styles
+├── script.js        # js
+├── peaks.json       # caching
+└── LICENSE          # license
 ```
 
 ## ⚙️ Usage
@@ -85,9 +85,7 @@ If you want to make changes to the project:
 ## 📄 License
 
 This project is licensed under the terms of the MIT license. Feel free to use, modify, and distribute this code.
-## ✉️ Коммерческое предложение
-
-Commercial Offer
+## ✉️ Commercial Offer
 
 Looking for a stylish and convenient audio player for your project?
 
