@@ -147,6 +147,7 @@ html {
 .wave {
   width: 50%;
   align-self: center;
+  cursor: default;
 }
 
 .icon-container {
@@ -174,93 +175,76 @@ html {
   text-align: left;
   font-size: 1rem;
   font-family: 'Tilda';
-  
 }
 
 @media (max-width: 768px) {
-  * {
-    box-sizing: border-box;
-  }
-
   body {
-    overflow-x: hidden;
-    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
-  .container-avatar {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    padding: 2rem;
-  }
-
-  .avatar #avatar {
-    width: 6rem;
-    height: 6rem;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-
-  #avatar {
-    width: 100%;
-    height: 100%;
+  .for-tracks {
+    gap: 1.5rem; /* Уменьшаем расстояние между треками */
   }
 
   .container-spectrum {
     display: flex;
-    max-width: 100%;
-    box-sizing: border-box;
+    flex-direction: column; /* Вертикальное расположение для мобильных устройств */
+    align-items: center; /* Центрируем контент */
+    width: 100%; /* Увеличиваем ширину */
+    padding: 1rem; /* Уменьшаем внутренние отступы */
+  }
+
+  .control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Добавляем равномерное расположение кнопки и текста */
+    width: 100%;
+  }
+
+  .track1 {
+    font-size: 0.8rem; /* Увеличиваем размер текста */
+    text-align: flex-start; /* Центрируем текст */
+  }
+
+  #playPause,
+  #playPause2,
+  #playPause3,
+  #playPause4,
+  #playPause5,
+  #playPause6,
+  #playPause7,
+  #playPause8,
+  #playPause9,
+  #playPause11,
+  #playPause12,
+  #playPause13,
+  #playPause14,
+  #playPause17,
+  #playPause18,
+  #playPause19,
+  #playPause20,
+  #playPause21 {
+    width: 2.5rem; /* Увеличиваем размер кнопки для удобства */
+    height: 2.5rem;
   }
 
   .wave {
-    width: 100%;
-  }
-
-  #audio-spectrum,
-  #second-audio-spectrum,
-  #third-audio-spectrum,
-  #four-audio-spectrum,
-  #fifth-audio-spectrum,
-  #sixth-audio-spectrum,
-  #seventh-audio-spectrum,
-  #eighth-audio-spectrum,
-  #ninth-audio-spectrum,
-  #eleventh-audio-spectrum,
-  #twlth-audio-spectrum,
-  #thrteenth-audio-spectrum,
-  #fourteenth-audio-spectrum,
-  #svnteenth-audio-spectrum,
-  #eighteenth-audio-spectrum,
-  #ninteenth-audio-spectrum,
-  #twenteenth-audio-spectrum,
-  #twen1teenth-audio-spectrum {
-    width: 90%;
-    max-width: 700px;
-    margin: 0 auto;
+    width: 100%; /* Делаем вейвы шире */
+    max-width: 320px; /* Ограничиваем ширину */
+    height: 60px; /* Немного увеличиваем высоту для удобства */
+    margin-top: 1rem; /* Добавляем отступ сверху */
+    cursor: default;
   }
 
   .name {
-    font-size: 16px;
+    font-size: 1.2rem; /* Уменьшаем размер заголовка */
+    margin-top: 0.5rem;
   }
 
   .description {
-    font-size: 10px;
-  }
-
-  .for-tracks {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .track1 {
-    color: #ffffff;
-    bottom: 1.5rem;
-    left: 3rem;
-    position: relative;
-    font-size: 10px;
-    font-family: 'Tilda';
+    font-size: 0.9rem; /* Уменьшаем размер описания */
+    margin-bottom: 1rem;
   }
 }
 

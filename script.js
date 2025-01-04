@@ -178,7 +178,60 @@ async function initTracks() {
   );
 }
 
-// Function to load a track
+function updateCursorStates() {
+  waveSurfers.forEach(({ instance }) => {
+    if (instance.isPlaying()) {
+      instance.setOptions({ cursorWidth: 4 }); 
+    } else {
+      instance.setOptions({ cursorWidth: 0 }); 
+    }
+  });
+}
+
+
+function handleButtonClick(clickedWave, button) {
+  waveSurfers.forEach(({ instance, button: btn }) => {
+    if (instance === clickedWave) {
+      if (instance.isPlaying()) {
+        instance.pause();
+        btn.innerHTML =
+          '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+      } else {
+        instance.play();
+        btn.innerHTML =
+          '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+      }
+    } else {
+      if (instance.isPlaying()) {
+        instance.pause();
+        btn.innerHTML =
+          '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+      }
+    }
+  });
+  updateCursorStates(); // Обновляем курсоры
+}
+
+function handleWaveClick(clickedWave) {
+  waveSurfers.forEach(({ instance, button }) => {
+    if (instance === clickedWave) {
+      if (!instance.isPlaying()) {
+        instance.play();
+        button.innerHTML =
+          '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
+      }
+    } else {
+      if (instance.isPlaying()) {
+        instance.pause();
+        button.innerHTML =
+          '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
+      }
+    }
+  });
+  updateCursorStates(); 
+}
+
+
 function loadTrack(
   waveSurferInstance,
   trackName,
@@ -192,82 +245,6 @@ function loadTrack(
 
   waveSurferInstance.load(`./tracks/${trackName}`, peaks, duration);
 
-  function handleButtonClick(clickedWave, button) {
-    waveSurfers.forEach(({ instance, button: btn }) => {
-      if (instance === clickedWave) {
-        if (instance.isPlaying()) {
-          instance.pause();
-          btn.innerHTML =
-            '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
-        } else {
-          instance.play();
-          btn.innerHTML =
-            '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
-        }
-      } else {
-        if (instance.isPlaying()) {
-          instance.pause();
-          btn.innerHTML =
-            '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
-        }
-      }
-    });
-  }
-
-  function handleWaveClick(clickedWave) {
-    waveSurfers.forEach(({ instance, button }) => {
-      if (instance === clickedWave) {
-        if (!instance.isPlaying()) {
-          instance.play();
-          button.innerHTML =
-            '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
-        }
-      } else {
-        if (instance.isPlaying()) {
-          instance.pause();
-          button.innerHTML =
-            '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
-        }
-      }
-    });
-  }
-
-  // Функции для обновления состояния кнопок
-  function updateButtonToPlay(button) {
-    button.innerHTML =
-      '<path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>';
-  }
-
-  function updateButtonToPause(button) {
-    button.innerHTML =
-      '<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>';
-  }
-
-  // Функция инициализации дорожек
-  function loadTrack(
-    waveSurferInstance,
-    trackName,
-    containerId,
-    playButton,
-    tracksData
-  ) {
-    const trackData = tracksData[trackName];
-    const peaks = trackData.peaks || [];
-
-    // Загружаем трек
-    waveSurferInstance.load(`./tracks/${trackName}`, peaks);
-
-    // События для взаимодействия
-    document.getElementById(containerId).addEventListener('click', () => {
-      handleWaveClick(waveSurferInstance, playButton);
-    });
-
-    playButton.addEventListener('click', () => {
-      handleButtonClick(waveSurferInstance, playButton);
-    });
-  }
-
-  // Events for interaction
   document.getElementById(containerId).addEventListener('click', () => {
     handleWaveClick(waveSurferInstance);
   });
@@ -632,4 +609,4 @@ waveSurfers.push({
   button: buttons.twen1teenthPlayPause,
 });
 
-initTracks();
+initTracks().then(updateCursorStates);
