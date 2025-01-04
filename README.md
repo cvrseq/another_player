@@ -106,4 +106,4 @@ Email: skuenemy@gmail.com
 
 ⭐ If you like the project, don't forget to star it on GitHub!
 
-### [--> Template <--](http://ивансуслин.рф/)
+### [--> Template <--](https://ivansuslin.com/)
