@@ -184,27 +184,27 @@ html {
   }
 
   .for-tracks {
-    gap: 1.5rem; /* Уменьшаем расстояние между треками */
+    gap: 1.5rem;
   }
 
   .container-spectrum {
     display: flex;
-    flex-direction: column; /* Вертикальное расположение для мобильных устройств */
-    align-items: center; /* Центрируем контент */
-    width: 100%; /* Увеличиваем ширину */
-    padding: 1rem; /* Уменьшаем внутренние отступы */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
   }
 
   .control {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Добавляем равномерное расположение кнопки и текста */
+    justify-content: space-between;
     width: 100%;
   }
 
   .track1 {
-    font-size: 0.8rem; /* Увеличиваем размер текста */
-    text-align: flex-start; /* Центрируем текст */
+    font-size: 0.7rem;
+    text-align: flex-start;
   }
 
   #playPause,
@@ -225,25 +225,25 @@ html {
   #playPause19,
   #playPause20,
   #playPause21 {
-    width: 2.5rem; /* Увеличиваем размер кнопки для удобства */
+    width: 2.5rem;
     height: 2.5rem;
   }
 
   .wave {
-    width: 100%; /* Делаем вейвы шире */
-    max-width: 320px; /* Ограничиваем ширину */
-    height: 60px; /* Немного увеличиваем высоту для удобства */
-    margin-top: 1rem; /* Добавляем отступ сверху */
+    width: 100%;
+    max-width: 320px;
+    height: 60px;
+    margin-top: 1rem;
     cursor: default;
   }
 
   .name {
-    font-size: 1.2rem; /* Уменьшаем размер заголовка */
+    font-size: 1.2rem;
     margin-top: 0.5rem;
   }
 
   .description {
-    font-size: 0.9rem; /* Уменьшаем размер описания */
+    font-size: 0.9rem;
     margin-bottom: 1rem;
   }
 }
