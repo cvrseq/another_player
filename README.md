@@ -1,6 +1,8 @@
 # WaveSurfer.js Player
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+- [WaveSurfer.js](https://github.com/katspaugh/wavesurfer.js)  
+  [![npm version](https://img.shields.io/npm/v/wavesurfer.js.svg?style=flat)](https://www.npmjs.com/package/wavesurfer.js)
 
 [Перейти на русский язык](README_RU.md)
 
