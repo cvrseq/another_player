@@ -1,8 +1,4 @@
-# WaveSurfer.js Player
-
-
-
-[![WaveSurfer](https://user-images.githubusercontent.com/381895/226091100-f5567a28-7736-4d37-8f84-e08f297b7e1a.png)](https://github.com/katspaugh/wavesurfer.js)
+# [![WaveSurfer](https://user-images.githubusercontent.com/381895/226091100-f5567a28-7736-4d37-8f84-e08f297b7e1a.png)](https://github.com/katspaugh/wavesurfer.js) WaveSurfer.js Player
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
